@@ -647,47 +647,306 @@ ___
 
 ## Perspective (1 Research, 4 Industries)
 
-- Title:
+- Title: Teaching Software Maintenance (Research)
+>  
+実践： アメリカの大学二年生（メンテナンス入門生）のソフトウェアメンテナンスの授業で、扱うプロジェクトの規模を大きくしてみた場合の利点についての実践レポート → ソフトウェアエンジニアリングの主要なトピックについて導入が簡単になった、OSSコミュニティへの有意義な貢献が示された
+
+Tag_Human, Tag_Teaching, Tag_Practice  
+Tag_S_Perspective
+
+こんな形式の論文もあるんやなって。 俺プログラミング習ったの大学二年からだったなぁと回顧
+___
+
+- Title: Continuous Collateral Privacy Risk Auditing of Evolving Autonomous Driving Software (Industry)
+>  
+背景： 自動運転の技術では多くのセンサーの情報を収集 → プライバシーとつながる可能性（リスク） → Collateral Privacy Risk  
+実践： Apollo プロジェクトでのプライバシーリスクについて分析 → 未解決の問題も残ったが、ソースコードベースの監査手法から予備結果を出力 → 監査の過程でバージョンが3.0から3.5へ → その過程の経験と困難をレポート化
+
+Tag_Hardware, Tag_Practice, Tag_Security  
+Tag_S_Perspective
+
+ハードウェア依存のセキュリティについての実践。 ソースコード解析なので、何かしら仕様から抽出したパターンマッチをしているのだろうけど、仕様の見逃しが怖い
+___
+
+- Title: Challenges in re-platforming mixed language PL/I and COBOL IS to an open systems platform (Industry)
+>  
+背景： 再プラットフォーム化 (re-platforming: レガシーシステムを新しいプラットフォームへ移行すること) はレガシーシステム保守のコスト削減の矢面に立つ → 技術的・組織的課題が伴う（コスト削減したいんだけど難しい）  
+解説： 再プラットフォーム化の課題と解決策を提示。 40年前のPL/I、COBOLアプリケーションの再プラットフォーム化で得られた教訓について説明
+
+Tag_Practice, Tag_Cost  
+Tag_S_Perspective
+
+レガシーシステムをどうするかという点ではGの参考にはなりそう（想定が異なる感は否めないが）
+___
+
+- Title: Application of Philosophical Principles in Linux Kernel Customization (Industry)
 >  
 背景：  
 提案手法：  
 実装：  
 実験：
 
-- Title:
->  
-背景：  
-提案手法：  
-実装：  
-実験：
+Tag_Human, Tag_Philosophy, Tag_Linux  
+Tag_S_Perspective
 
-- Title:
->  
-背景：  
-提案手法：  
-実装：  
-実験：
+Abst長すぎぃ！ ななめ読みするとソフトウェアエンジニアリングと哲学的な原則は共通部分があり、哲学的原則を研究することでSEへ還元できる（応用できる）といいたい？ どちらかというと開発や維持に哲学的思考を使うとベネと言っている、のか？  
+SEの概念を日常に見出す（あるいはその逆も）ことはあるけど、ぶっちゃけここまで深くは考えていない
+___
 
-- Title:
+- Title: Lessons Learned from Large-Scale Refactoring (Industry)
 >  
-背景：  
-提案手法：  
-実装：  
-実験：
+説明： Googleでは数億行のコードを含む大規模な多言語コードベースを維持 → 過去数年にわたり、所属チームでコードベースを大規模に効率的に更新するプロセスを開発 → 学んだ教訓と未解決の問題について説明
 
-- Title:
->  
-背景：  
-提案手法：  
-実装：  
-実験：
+Tag_Practice, Tag_Google  
+Tag_S_Perspective
+___
 
 ## Late Breaking Ideas (5 Ideas)
 
+- Title:
+>  
+背景：  
+提案手法：  
+実装：  
+実験：
+
+- Title:
+>  
+背景：  
+提案手法：  
+実装：  
+実験：
+
+- Title:
+>  
+背景：  
+提案手法：  
+実装：  
+実験：
+
+- Title:
+>  
+背景：  
+提案手法：  
+実装：  
+実験：
+
+- Title:
+>  
+背景：  
+提案手法：  
+実装：  
+実験：
+
 ## Testing (2 Researches, 1 Journal, 2 Shorts)
+
+- Title: An Empirical Study of the Relationship between Continuous Integration and Test Code Evolution (Research)
+>  
+背景： CIはコード統合の頻度を自動化する実践 → 広く利用されてきた → 早期のエラー特定に有用 → CIが新テスト手法の導入を阻害していないかは不明瞭  
+調査： CIを採用しているプロジェクトと非採用のプロジェクトをそれぞれ82個ずつ調査 → 全体で3936バージョンに対して、テストコード比率とカバレッジを調査 → CIプロジェクトのほうがテストコード比率が高くなる傾向（カバレッジの改善も見られる） → CIは健全なテストとその進化を後押ししている
+
+Tag_CI, Tag_Dev, Tag_Survey, Tag_Test  
+Tag_S_Test
+
+ここまでCIを賛美する論文は中々なさそう（CIと非CIの比較にどれだけの意味があるのかは不明として）？ 82個ずつのプロジェクトが対をなしているなら説得力は高いけどもどうだろ
+___
+
+- Title: What Factors Make SQL Test Cases Understandable For Testers? A Human Study of Automatic Test Data Generation Techniques (Research)
+>  
+背景： RDBのテストに関して、テストケースの自動生成は色々研究されている → テスターがSQL関連のテストを理解してテストできているかは不明瞭   
+調査： RDBの自動生成されたテストについてのテスターの理解について調査 → 受理もしくは拒否されるINSERT文の生成器を採用 → INSERTのVALUEはテスターの理解に影響を与える（デフォルト値など）、負数とNULLなどの文字列はテスターの予測を妨げる（テストの結果が正しいか混乱する）
+
+Tag_SQL, Tag_Database, Tag_Test, Tag_Test_Case_Gen, Tag_Survey  
+Tag_S_Test
+
+ここでのテストケース自動生成はSQL構文が崩れないようにひな形を作っている、ぐらいの感じ？ 記号実行とかではめんどくさい要素やし
+___
+
+- Title: Concrete hyperheuristic framework for test case prioritization (Journal)
+>  
+背景： テストケースの優先順位付け (Test Case Prioritization: TCP) → 最適化のために色々なアルゴリズムが検討 → 新しいテストシナリオに対して、適切なアルゴリズムの決定は困難  
+提案手法： hyperheuristic に基づいた一般的に適用可能な search-based TCP を提案 → 様々なアルゴリズムを包含、シナリオを学習し、適切な戦略を動的に選択  
+実装：  
+実験： 適切にアルゴリズムを選択できている
+
+Tag_Test, Tag_Learning, Tag_Metrix  
+Tag_S_Test
+
+テストケースの実行順を決定する戦略を決定する戦略についての論文。
+___
+
+- Title: Systematically Testing and Diagnosing Responsiveness for Android Apps (Short)
+>  
+背景： アプリの応答性はユーザ視点でのパフォーマンス解釈の最たる例 → CPUの使用率以外にも、デバイスやハードウェアの構成が応答性に影響を与える可能性 → 構成に依存するバグの検出メカニズムはない  
+提案手法： AppSPIN 応答性のバグを自動診断、構成依存のバグを体系的に調査 → アプリに対して計装を行う  
+実装：  
+実験： 30の実際のアプリで評価 → 123の応答性のバグを検出 → 87%について15分のテスト時間内に正常に診断
+
+Tag_Hardware, Tag_Debug, Tag_Response, Tag_Implementation  
+Tag_S_Test
+
+計装している以上、AppSPINが応答性に影響を与えている可能性が排除できない（そこについて言及があるかどうか）
+___
+
+- Title: DeepEvolution: A Search-based testing approach for Deep Neural Networks (Short)
+>  
+背景： Deep Learning へのテストケースの自動生成が開発されてきている → Rondom Fuzzingや変換（常に有効な多様性を持つテストケースを生成するわけではない）に依存 → 有効性が阻害  
+提案手法： DeepEvolution search-based のDLモデルをテストする新手法  
+実装：  
+実験： ニューロンカバレッジが大幅に増加（いくつかのコーナーケースも発見） → Tensorfuzzよりも優れていた
+
+Tag_Learning, Tag_Test, Tag_Fuzz, Tag_Test_Case_Gen  
+Tag_S_Test
+
+最初勘違いしたが、DLを用いたテストではなくて、DLをテストする手法。 今までそういったテストにBlackbox使われているとは知らなんだ（ホント？）
+___
 
 ## Systems and Configurations (2 Researches, 1 Industry, 2 Shorts)
 
+- Title: An Exploratory Study of Logging Configuration Practice in Java (Research)
+>  
+背景： ロギングの構成はロギングの機能、パフォーマンス、信頼性に大きな影響 → ロギングの構成に焦点を当てた調査はない  
+調査： 様々なサイズとドメインの10のJavaのOSSプロジェクトと10の産業プロジェクトのロギング構成の実践を調査 → ロギング構成の変更履歴（1213のリビジョン）を分類、分析 → 10個の知見 → 知見から検出器を開発、3つの2年以上未解決のIssueへ取り組み → 2件は解決
+
+Tag_Logging, Tag_Survey, Tag_Version  
+Tag_S_Configuration
+
+ここでのログ構成はコーディングのことなのかコンポーネントの構成なのか（多分前者）。 ログ方面に舵を切るなら気になるかも
+___
+
+- Title: Performance-Influence Model for Highly Configurable Software with Fourier Learning and Lasso Regression (Research)
+>  
+背景： システム構成とそのパフォーマンスの推定は大事 → 構成の組み合わせが指数関数的 → 全構成でパフォーマンスを測定するのは非現実的  
+提案手法： PerLasso フーリエ学習とLasso Regressionに基づいたパフォーマンスモデリング＆予測手法 → 構成サンプルからパフォーマンスを学習（影響モデルを生成）、フーリエ係数を減らすための新しい次元削除アルゴリズムも提案  
+実装：  
+実験： 4つの合成データセットと6つの実際のデータセットで評価 → 有効（vs 既存のパフォーマンス影響モデル）
+
+Tag_Learning, Tag_Lasso, Tag_Prediction  
+Tag_S_Configuration
+
+構成コストの推定、なんだが、これは構成可能な組み合わせの中で最適な組み合わせを抽出するものなのか？ よくわからんぬ
+___
+
+- Title: Microservices Migration in Industry: Intentions, Strategies, and Challenges (Industry)
+>  
+背景： 環境が移ろう中で、レガシーシステムをマイクロサービスアーキテクチャへ移行が発生 → 大規模な移行では影響と課題の慎重な検討が必要 → 業界内の実践経験がまとまっていない  
+調査： 10社のソフトウェア専門家に16回のインタビューを実施、様々なドメイン、サイズの14のシステムの移行プロセスを調査 → 移行では保守性とスケーラビリティが重視、コードベースの分割よりも現代風に書き換えが好まれる（適切な分割手法がないことも要因、技術的課題）
+
+Tag_Survey, Tag_Human, Tag_Practice  
+Tag_S_Configuration
+
+移行時の経験・知見についての調査
+___
+
+- Title: Comparing Constraints Mined From Execution Logs to Understand Software Evolution (Short)
+>  
+背景： システム開発で、変更の影響を理解するのは大抵困難 → 変更の影響分析について多く提案されている  
+提案手法： 変更前と変更後の実行ログから実行時の制約を比較する手法 → マイニングされた制約を定期的なイベントの予想タイミングと順序、データ要素の値として定義 → 違いを提供することで影響分析をサポート  
+実装：  
+実験： ソフトウェアの進化の理解に貢献できそう
+
+Tag_Diff, Tag_Learning, Tag_Version  
+Tag_S_Configuration
+
+ここでの制約はソルバにとかせるような奴ではない。 差分解析としては参考になるかもしれんがShort
+___
+
+- Title: Synthesizing Program Execution Time Discrepancies in Julia Used for Scientific Software (Short)
+>  
+背景： 科学ソフトウェア（データ分析を用いて知見を得るソフトウェア） → 開発にはJuliaという言語が使われることがあるが、実行時間の見積もりができないのでタスクが効率的に完了できない  
+調査： StackOverflowの投稿から実行時間の不一致（想定と違う）についての原因の特定を試みる → 263のJulia関連の投稿について定性分析 → 9つのカテゴリに分類、10個の原因を特定（配列内包の表記で不必要なメモリ割り当てが発生した場合など）
+
+Tag_Julia, Tag_Learning, Tag_StackOverflow, Tag_Survey  
+Tag_S_Configuration
+
+ここでの実行時間の不一致は数時間とか数日とかの単位でいいのかね？ Juliaという言語は知らんかった
+___
+
 ## Comprehension and Empirical Studies (3 Researches, 2 Shorts)
 
+- Title: Comprehending Test Code: An Empirical Study (Research)
+>  
+背景： 開発者のソースコード理解タスクについての調査はある → テストコード理解の方法についてはあまり調査されていない  
+調査： Javaテストコードの理解方法について44人について調査 → テストスイートの読み取りに費やされた合計時間、テストスイートの目的の特定の仕方、テストスイートの拡張の仕方について調査 → 1)事前知識があると読み取り時間が短縮、2)Javaの経験値がAssertなどへの消費時間が短縮、1)2)両方を備えているとテストケース作成に好影響、自動テストの経験は自動テストスイートの理解と拡張に影響
+
+Tag_Human, Tag_Survey, Tag_Test, Tag_Test_Suite  
+Tag_S_Comprehension, Tag_S_Human
+
+テストについての理解手法（人間視点）の調査論文。そこまで劇的な内容ではないが、イメージ通りの内容を補強してくれている感。
+___
+
+- Title: An Empirical Study Assessing Source Code Readability in Comprehension (Research)
+>  
+背景： ソースコードの読み取りには時間がかかる → 読み取りやすいコードを書くのがベネ → ネストとループについて2つのコードの可読性ルールを評価  
+調査： 4つのカテゴリ（ルールに従うか否か、正しいか否か）、32のJavaメソッドをテスト → オンライン上で275名が実施 → ネストが最小限に抑えるとソースコードの読み取り理解の時間短縮、理解力の向上、do-whileは回避してもそこまで効果なし、英語知識が高いほどネストの最小化に影響
+
+Tag_Human, Tag_Code, Tag_Survey, Tag_Language  
+Tag_S_Comprehension, Tag_S_Human
+
+多くのプログラムが英語がベースになっているとはいえ、英語知識が記述に影響を与えるという結果は意外。 ネストが深いと読みづらいのは順当だが、ループ回避（どうやるのかは知らんが）してもそこまで影響しないのは意外
+___
+
+- Title: Handling duplicates in Dockerfiles families: Learning from experts (Research)
+>  
+背景： Dockerfileの管理が単一ではなく複数の Dockerfiles (family) になってきている → 重複処理という（古典的な）課題が発生するのかは未調査  
+調査： 128のプロジェクトでの管理者を観察、25人に絞って調査 → 重複は頻繁に発生し、それに対してどうするかは意見が分かれる → 一部の管理者がその場のツールを使用 → 最大85%重複を削除する可能
+
+Tag_Human, Tag_Docker, Tag_Survey  
+Tag_S_Comprehension, Tag_S_Human
+
+解読に時間がかかったが、Dockerfile間の重複（冗長）があるのか、あった場合どうするのかについての調査。 Dockerもどこかで習いたいなぁ
+___
+
+- Title: Share, But Be Aware: Security Smells in Python Gists (Short)
+>  
+背景： GitHub Gist上にハードコードされたパスワードなど（Security Smells）を乗せてしまうことがある（危ない） → 脆弱性へ繋がる  
+調査： 公開済みの Security Smells 関係の研究を用いて、Gist上のにおいを調査 → 静的分析を通じて13の Security Smells を発見、4403/5822 の公開済み Python Gists で発生が確認 → 1817/5822 で機密性の高いインスタンスを含むコードあり
+
+Tag_Github, Tag_Security, Tag_Survey, Tag_Code_Smell  
+Tag_S_Comprehension, Tag_S_Human
+
+セキュリティ上の情報を公開してしまう（コーディングや体制も含め）危険性の議論とその調査。 率が尋常じゃないが、母数の5822は絞っているはず。
+___
+
+- Title: Can Automated Impact Analysis Techniques Help Predict Decaying Modules? (Short)
+>  
+背景： Decaying Modules → 将来的ににおいを発する可能性があるモジュール → 潜在的なにおい → においの予測という観点の手法が提案されてきている → 開発者の変更モジュールの情報（開発者のコンテキスト）が予測パフォーマンスの改善に役立つが、その情報の取得にはコストがかかる  
+提案手法： 自動影響分析を用いて、開発者のコンテキストの自動推定の方法を模索  
+実装：  
+実験： 影響分析の精度とDecaying Modulesの予測精度との相関関係を調査
+
+Tag_Code_Smell, Tag_Version, Tag_Automation, Tag_Prediction  
+Tag_S_Comprehension, Tag_S_Human
+
+林先生じゃんか。 においを放つかどうかを予測する、という文脈で自動影響解析が使えないか（情報が使えるのは分かっているので）、という趣旨の論文。
+___
+
 ## Architecture (3 Researches, 1 Industry)
+
+- Title:
+>  
+背景：  
+提案手法：  
+実装：  
+実験：
+
+- Title:
+>  
+背景：  
+提案手法：  
+実装：  
+実験：
+
+- Title:
+>  
+背景：  
+提案手法：  
+実装：  
+実験：
+
+- Title:
+>  
+背景：  
+提案手法：  
+実装：  
+実験：
