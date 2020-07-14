@@ -10,9 +10,14 @@
 
 ## Bugs I (2 Researches, 2 Journals, 1 Short)
 
+<div class="waku">
+<details open>
+
+___
+
 - Title: A Longitudinal Analysis of Bug Handling Across Eclipse Releases (Research)
 >  
-背景： Eclipseのような大規模OSSは定期的なリリースを行う → 各リリースでバグが報告され、解析・修正 → 既存研究はそのバグ修正などに焦点 → 各リリース間の修正アクティビティそのものを比較（つまり、リリースAとリリースBのバグ修正のどこに差があり、どのような影響があるのか）する研究はない  
+背景： Eclipseのような大規模OSSは定期的なリリースを行う → 各リリースでバグが報告され、解析・修正 → 既存研究はそのバグ修正などに焦点 → **各リリース間の修正アクティビティそのものを比較**（つまり、リリースAとリリースBのバグ修正のどこに差があり、どのような影響があるのか）する研究はない  
 調査： Eclipseの15年分のバグ処理プロセス（138Kのバグレポートや年間16+4*2のリリースも含）を調査 → バグの解決率、修正率、 Release Pressure の影響を調査 → 後期ほど修正率などが改善
 
 Tag_CI, Tag_Survey, Tag_Release, Tag_Version  
@@ -23,7 +28,7 @@ ___
 
 - Title: Impact of switching bug trackers: a case study on a medium-sized open source project (Research)
 >  
-背景： Bug Tracker (Bugzilla/GitHub) はソフトウェアプロジェクトにおいて必要不可欠 → ユーザからバグ報告をしてもらう（貢献） → Bug Tracker の各環境が持つバグ報告への影響の比較は困難（比較箇所がないため）  
+背景： Bug Tracker (Bugzilla/GitHub) はソフトウェアプロジェクトにおいて必要不可欠 → ユーザからバグ報告をしてもらう（貢献） → **Bug Tracker の各環境が持つバグ報告への影響の比較は困難（比較箇所がないため）**  
 調査： 中規模OSSプロジェクトのCoqのバグトラッカーを変更（Bugzilla → GitHub）した場合の影響を調査 → IssueをインポートするGitHub APIを利用し 4900のバグレポートを移行  
 提案手法： 切り替え前後のデータを比較する新規メトリクス → Regression on Discontinuity を用いた分析  
 結果： 主要な開発者自身からバグ報告が増加、開発者のコメント増加、外部から意見を出す人も増加
@@ -31,12 +36,12 @@ ___
 Tag_Regression, Tag_Github, Tag_Debug, Tag_Dev  
 Tag_S_Debug
 
-結論としては、GitHubに切り替えたらバグレポートが活発化したということでいいのか？（だとするとただのGitHub賛美になるだけなんだが） ○○みたいなプロジェクトは××のバグトラッカーが適している（根拠が提案するメトリクス）、みたいなら筋書きは分かるんだが…
+結論としては、GitHubに切り替えたらバグレポートが活発化したということでいいのか？（だとするとただのGitHub賛美になるだけ） ○○みたいなプロジェクトは××のバグトラッカーが適している（根拠が提案するメトリクス）、みたいなら筋書きは分かるんだが…
 ___
 
 - Title: Multi-task Defect Prediction (Journal)
 >  
-背景： 欠陥予測において、ラベル付きデータは十分にあるという仮定や想定が多い → 実際にはラベル付きは限定的 → 未調査の部分が多い  
+背景： **欠陥予測において**、ラベル付きデータは十分にあるという仮定や想定が多い → **実際にはラベル付きは限定的** → 未調査の部分が多い  
 提案手法： MASK ラベル付きデータが少ないシナリオでも学習できるようにマルチタスク学習を適用した欠陥予測手法 → フェーズを分割（微分進化最適化フェーズ: プロジェクト間の共有情報と非共有情報への重み付け、マルチタスク学習フェーズ: 各プロジェクトの予測モデルを同時に構築）   
 実装：  
 実験： 18の実世界のソフトウェアプロジェクトで評価（vs STL, SCL, Peters filter, Burak filter） → ラベルデータが全体の10%という状況下で、MASKはF値0.397, AUC 0.608 を達成 → 他の手法を大幅に上回る
@@ -49,7 +54,7 @@ ___
 
 - Title: The Impact of Context Metrics on Just-In-Time Defect Prediction (Journal)
 >  
-背景： 既存の欠陥予測アプローチでは、変更された行のみに焦点を当てている → その周辺の行の情報は無駄に → 周辺情報が予測結果に影響を与えるのではという直観  
+背景： 既存の欠陥予測アプローチでは、変更された行のみに焦点を当てている → その周辺の行の情報は無駄に → **周辺情報が予測結果に影響を与えるのではという直観**  
 提案手法： 周辺情報を学習へ利用できるようにメトリクスを定義 (Context Metrics) → ここでのContextは変更行の周辺 n 行（ n = 1, 2, ... ）の位置づけ → Metricsの中身はコンテキスト行の単語/キーワードの数  
 実装：  
 実験： 6つのOSSプロジェクトで評価 → コンテキスト行を考慮したほうが中央値が高い
@@ -62,7 +67,7 @@ ___
 
 - Title: The Impact of Rare Failures on Statistical Fault Localization: the Case of the Defects4J Suite (Short)
 >  
-背景： Statistical Fault Localization (SFL) はテストから得られたカバレッジ情報と統計メトリクスを使用して障害発生位置を推量 → 統計的メトリクスの有効性とテストスイートの失敗率の関連性は不明のまま  
+背景： **Statistical Fault Localization (SFL)** はテストから得られたカバレッジ情報と統計メトリクスを使用して障害発生位置を推量 → 統計的メトリクスの有効性とテストスイートの失敗率の関連性は不明のまま  
 調査： Defects4Jを調査 → テストスイートの失敗率が低いとSFLのパフォーマンスが低下（失敗データが少なくて学習が不十分になるから？） → 各統計メトリクスの精度を調査 → 精度が上昇するとSFLのパフォーマンスが上昇
 
 Tag_Learning, Tag_Localization, Tag_Defect4J, Tag_Statistical  
@@ -71,7 +76,15 @@ Tag_S_Debug
 メトリクスの評価をしてみた、という位置づけでおｋ？ 失敗率が低いと精度が下がるというジレンマっぽい何かを感じる。
 ___
 
+</details>
+</div>
+
 ## Mobile (4 Researches, 1 Short)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: Do Energy-oriented Changes Hinder Maintainability? (Research)
 >  
@@ -128,16 +141,24 @@ Tag_S_Mobile
 レビューはお国柄が出るのは同意（App Storeの日本のレビューってレビューじゃないよな）
 ___
 
+</details>
+</div>
+
 ## Bugs II (2 Researches, 2 Journals)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: Improving Bug Triaging with High Confidence Predictions at Ericsson (Research)
 >  
 背景： バグのトリアージ（切り分け）はコストがかかる  
 提案手法： Logistic Regression Classifier テキスト属性とカテゴリ属性を含む  
 実装：  
-実験： エリクソンの9つの大規模製品のレポートに対して適用（自動予測の実践） → 最大 Precision 78.09%, 最大 Recall 79.00 % → エリクソンのバグレポにはクラッシュダンプとアラームログが含まれていることがよくある → これを識別子に追加情報として追加 → Precisionが90%に向上したが、予測可能なレポートは62%になった
+実験： エリクソンの9つの大規模製品のレポートに対して適用（自動予測の実践） → 最大 Precision 78.09%, 最大 Recall 79.00 % → **エリクソンのバグレポにはクラッシュダンプとアラームログが含まれていることがよくある → これを識別子に追加情報として追加** → Precisionが90%に向上したが、予測可能なレポートは62%になった
 
-Tag_Review, Tag_Triaging, Tag_Learning  
+Tag_Review, Tag_Triaging, Tag_Learning, Tag_Practice  
 Tag_S_Debug
 
 どちらかというと実践についてのレポート？ 文章がコンガラガッテ主張がいまいち分からない
@@ -185,7 +206,7 @@ ___
 - Title: Tracing with Less Data: Active Learning for Classification-Based Traceability Link Recovery (Research)
 >  
 背景： 既存研究で、Traceabilityの確立と維持は重要だが困難と判明 → アーティファクト間のトレーサビリティリンクの回復はコストがかかる → 自動化できると嬉しいし、データが豊富な環境下では自動修復が効果的という結果アリ → が、実際にはデータが限定的  
-提案手法： 教師付き分類手法で必要なトレーニングデータを大幅に削減する Active Learning に基づく手法  
+提案手法： **教師付き分類手法で必要なトレーニングデータを大幅に削減する** Active Learning に基づく手法  
 実装：  
 実験：
 
@@ -195,10 +216,10 @@ Tag_S_Learning
 データが少ないというのが機械学習関連ではよく当たる課題の模様。
 ___
 
-- Title: Deep Learning Anti-patterns from Code Metrics History (Research)
+- Title: <font color="orange"> Deep Learning Anti-patterns from Code Metrics History </font> (Research)
 >  
 背景： アンチパターンは再発生する設計問題のジャンルでは不十分（設計問題のアンチパターンが未熟） → 様々な検出技術の動機となるアンチパターンの悪影響が存在 → アンチパターンの検出を主軸とした結果、いくつかの貴重な情報を見逃す可能性  
-提案手法： Convolutional Analysis of code Metrics Evolution (CAME) バージョン管理システムからパターンマイニング → アンチパターンの存在を推測  
+提案手法： Convolutional Analysis of code Metrics Evolution (CAME) バージョン管理システムからパターンマイニング → **アンチパターンの存在を推測**  
 実装：  
 実験： 3つのシステムでの God Class アンチパターンに対するアプローチを評価 → ソースコードメトリクスの履歴を利用すると精度が向上、CAMEが既存の静的機械学習分類子よりも優れている、既存の検出ルールよりも優れている
 
@@ -224,7 +245,7 @@ ___
 - Title: Automated Characterization of Software Vulnerabilities (Short)
 >  
 背景： 脆弱性を把握するのに、CVEがよく使われる → CVEのレポートには 説明、開示ソース、NIST VDO (Vulnerability Description Ontology: 特性タグ) が付随 → 執筆に専門知識が必要なこともあり、レポートが不正確・不完全になる可能性がある（特にタグ付け）  
-提案手法： CVEレポートのテキストからVDOタグを自動識別する手法 → VDOの一つにマッピングされた365の脆弱性のレポートをデータセットとして利用 → 6つの分類アルゴリズムを生成  
+提案手法： **CVEレポートのテキストからVDOタグを自動識別する手法** → VDOの一つにマッピングされた365の脆弱性のレポートをデータセットとして利用 → 6つの分類アルゴリズムを生成  
 実装：  
 実験： 6つの分類アルゴリズムのパフォーマンスを評価 → 全部正確な結果を生成 → その中でSVMが一番正確だった
 
@@ -237,7 +258,7 @@ ___
 - Title: Learning to Identify Security-Related Issues Using Convolutional Neural Networks (Short)
 >  
 背景： セキュリティは大事なんだが、機能と同時に堅牢なセキュリティを実現しようとするとバランス調整がムズイ（特にアジャイルの文脈で） → セキュリティへの焦点を自動化についての設計と開発  
-提案手法： Ergo SecureReqNetという問題追跡システムがセキュリティも見ているかを自動識別する手法を採用 → 2フェーズ（CVEに登録されている数十万の脆弱性の説明とOSSプロジェクトから得られた問題説明で word embedding を学習 → 学習結果からある問題がセキュリティ関連であるかどうかを予測するNNをトレーニング）  
+提案手法： Ergo SecureReqNetという問題追跡システムがセキュリティも見ているかを自動識別する手法を採用 → 2フェーズ（CVEに登録されている数十万の脆弱性の説明とOSSプロジェクトから得られた問題説明で word embedding を学習 → 学習結果から **ある問題がセキュリティ関連であるかどうかを予測するNNをトレーニング**) <br>
 実装：  
 実験： GitLabとGitHubのプロジェクトからマイニングされたデータセットで評価 → セキュリティ関連の問題の特定に成功 → OSSでは96%、産業要件では71.6%の精度を達成
 
@@ -251,7 +272,7 @@ ___
 
 - Title: TECCD: A Tree Embedding Approach for Code Clone Detection (Research)
 >  
-背景： コードクローンの検出技術の歴史は深い → DL技術の登場で検出能力が向上 → 一般にASTから二分木構造への変換をし、 term embedding を行う  
+背景： コードクローンの検出技術の歴史は深い → DL技術の登場で検出能力が向上 → **一般にASTから二分木構造への変換をし、 term embedding を行う**  
 提案手法： TECCD 新規embedding手法 → ASTの各中間ノードのノードベクトルを取得 → ツリーベクトルを生成 → ツリーベクトル間のユークリッド距離を測定（コードクローンの判定）  
 実装：  
 実験： BigCloneBench (BCB) と他の7つの大規模Javaプロジェクトで評価 → 優れた精度を達成
@@ -303,9 +324,9 @@ ___
 - Title: Self-Admitted Technical Debt Removal and Refactoring Actions: Co-Occurrence or More? (Short)
 >  
 背景： 技術的負債は適切な解決策を欠如させる可能性がある → Self-Admitted Technical Debt (SATD) コメントやコミットメッセージによる導入（Admittance）  
-調査： リファクタリングとSATD削除の関係性を調査 → 4つのOSSプロジェクトでSATDとその削除をデータセットとして利用 → 自動リファクタリング検出ツールとともに関係性を調査 → リファクタリングとSATDの削除には相関がありそう
+調査： **リファクタリングとSATD削除の関係性を調査** → 4つのOSSプロジェクトでSATDとその削除をデータセットとして利用 → 自動リファクタリング検出ツールとともに関係性を調査 → リファクタリングとSATDの削除には相関がありそう
 
-Tag_Dev, Tag_Learning, Tag_Cost, Tag_Technical_Debt  
+Tag_Dev, Tag_Learning, Tag_Cost, Tag_Technical_Debt, Tag_Survey  
 Tag_S_Refactoring
 
 結局SATDが何なのか分らぬ…（Admittanceの適当な訳が分からん）。 あくまでリファクタリングとの因果関係までは調査していない模様なので、過信しすぎないよう
@@ -514,7 +535,7 @@ ___
 
 - Title: Learning How to Mutate Source Code from Bug-Fixes (Research)
 >  
-背景： Mutant Testing (変異テスト) → テストケース生成を誘導したり、テストスイートの評価に利用 → 実際の障害から変異操作を考案する手法がある → が、コスト高くエラー率が高い → テスターが変異させるかどうかの意思決定には役立たない  
+背景： Mutant Testing (変異テスト) → テストケース生成を誘導したり、テストスイートの評価に利用 → 実際の障害から変異操作を考案する手法がある → が、コスト高くエラー率が高い → **テスターが変異させるかどうかの意思決定には役立たない**  
 提案手法： 実際の障害から変異を学習する新手法 → 細かい差分、こーどの抽象化、変更のクラスタリングで前処理 → DLを用いて 変異モデルを学習  
 実装：  
 実験： GitHubからマイニングされたバグ修正のデータセットでトレーニング、評価 → 経験的に、修正されたバグと類似した変異ケースを9-45%で予測、変異後も構文的なエラーは98%で発生しなかった
@@ -530,7 +551,7 @@ ___
 背景： ソフトウェアの進化可能性 (evolvability) は3つの要素（進化するシステムプロパティ、人間的要素、進化の需要）の積  
 解説： ソフトウェアの進化可能性を強化する5つの推奨事項について説明 → ソフトウェア変更の定義済みプロセス、コードの進化部分と安定部分の区別、分析可能なコードセグメント、重要な概念のカプセル化、ラッピングの回避
 
-Tag_Co_Evolve, Tag_Code, Tag_Human, Tag_Dev, Tag_Survey  
+Tag_Co_Evolve, Tag_Evolvability, Tag_Code, Tag_Human, Tag_Dev, Tag_Survey  
 Tag_S_Code, Tag_S_Repair
 
 Abst短すぎるっぴ。 サーベイよりも解説寄りのジャーナル
@@ -539,7 +560,7 @@ ___
 - Title: Personalized Code Recommendation (Short)
 >  
 背景： コードのリコメンドについての最先端手法は、ほとんどがcrowd-based → プログラマーが異なればコーディングパターンも異なる、Crowdにやると特定のプログラマー向けのコードリコメンドのパフォーマンスが落ちる可能性  
-提案手法： プログラマー個人のコーディングパターンに焦点を当てたコードのリコメンド手法 → 変数宣言と初期化コードのリコメンドモデルを作成 → コーディング履歴に基づいて、個人のコーティングパターンを学習  
+提案手法： **プログラマー個人のコーディングパターンに焦点を当てたコードのリコメンド手法** → 変数宣言と初期化コードのリコメンドモデルを作成 → コーディング履歴に基づいて、個人のコーティングパターンを学習  
 実装：  
 実験： 効果的であるという結果 → Top1で62%、Top3で70%の精度（ベースライン比大幅改善）
 
@@ -551,7 +572,7 @@ ___
 
 - Title: Syntax and Stack Overflow: A methodology for source code error and fix extraction (Short)
 >  
-背景： 構文エラーの修正に役立つ情報の一つは、構文エラーの代表例を取得すること → 実際の構文エラーデータセットは、一般的な開発者の集団を表現できていない（公開されていなかったり、初心者からのデータだったり）  
+背景： 構文エラーの修正に役立つ情報の一つは、構文エラーの代表例を取得すること → **実際の構文エラーデータセットは、一般的な開発者の集団を表現できていない** （公開されていなかったり、初心者からのデータだったり）  
 提案手法： 一般的な構文エラーを抽出するための手法と構文エラーの研究に役立つ対応する修正データセット → 62965の Python Stack Overflow のコードスニペットデータセット  
 実装：  
 実験：
@@ -577,8 +598,8 @@ ___
 
 - Title: Impact Analysis of Syntactic and Semantic Similarities on Patch Prioritization in Automated Program Repair (Short)
 >  
-背景： パッチの優先順位付け → 正確さの確率に基づいてパッチをソート → バグ修正時間を最小化、自動プログラム修正の精度の最大化に貢献 → 既存文献の手法では、欠陥コードと修正要素間の構文的or意味的な類似性から順位付け  
-提案手法： 構文的 and 意味的 な類似性の積で分析する手法 → 変数類似性などを利用して意味的売り自制を測定、正規化された最長共通サブシーケンスを利用して構文類似度を測定  
+背景： パッチの優先順位付け → 正確さの確率に基づいてパッチをソート → バグ修正時間を最小化、自動プログラム修正の精度の最大化に貢献 → 既存文献の手法では、欠陥コードと修正要素間の **構文的 or 意味的** な類似性から順位付け  
+提案手法： **構文的 and 意味的** な類似性の積で分析する手法 → 変数類似性などを利用して意味的売り自制を測定、正規化された最長共通サブシーケンスを利用して構文類似度を測定  
 実装：  
 実験： IntroClassJava ベンチマークから22個の置換変異バグを選択、評価 → 22個すべてを修復（精度100%）
 
@@ -592,7 +613,7 @@ ___
 
 - Title: Losing Confidence in Quality: Unspoken Evolution of Computer Vision Services (Research)
 >  
-背景： コンピュータービジョンといったMLの応用先は、アクセシビリティとシンプルさが魅力的 → 複数のベンダがこれらの技術を提供 → メンテナンスと進化のリスクについての調査はない（特に動作の一貫性と機能の透明性）  
+背景： コンピュータービジョンといったMLの応用先は、アクセシビリティとシンプルさが魅力的 → 複数のベンダがこれらの技術を提供 → **メンテナンスと進化のリスクについての調査はない**（特に動作の一貫性と機能の透明性）  
 調査： 3つの異なるデータセットを使用して11か月の間3つのサービスについてのアウトプットを評価 → サービス動作に一貫性がない、アウトプットの進化リスクが存在、リスク・不整合を文書化する明確なコミュニケーションが存在しない
 
 Tag_Learning, Tag_Survey, Tag_Service  
@@ -614,7 +635,7 @@ Tag_S_API, Tag_S_Code, Tag_S_Dev
 
 - Title: Source Code Properties of Defective Infrastructure as Code Scripts (Journal)
 >  
-背景： 継続開発の文脈で、IaC (Infrastructure-as-Code) の欠陥は開発の自動化やパイプラインの信頼性を損ねる可能性 → ハードコードされた文字列などのプロパティが、IaCの欠陥と相関があるのではと仮定  
+背景： 継続開発の文脈で、IaC (Infrastructure-as-Code) の欠陥は開発の自動化やパイプラインの信頼性を損ねる可能性 → **ハードコードされた文字列などのプロパティが、IaCの欠陥と相関がある** のではと仮定  
 調査： OSSレポジトリからマイニングされた欠陥関連のコミットに定性分析を適用 → 欠陥のあるIaCと相関のあるプロパティを特定 → 4つのデータセットから2439のスクリプトとそのプロパティを使用して欠陥予測モデルも構築 → 10個の欠陥関連のプロパティを識別 → 欠陥IaCとの相関が認められる
 
 Tag_Learning, Tag_IaC, Tag_Prediction, Tag_Survey  
@@ -626,7 +647,7 @@ ___
 - Title: Inappropriate Usage Examples in Web API Documentations (Short)
 >  
 背景： APIの学習にドキュメントが利用されるが、そのドキュメントが信頼できない可能性もある  
-調査： 使用例と出力例からOpenAPIの仕様を抽出し、Web APIドキュメントと比較、不適切なドキュメントの特性を調査 → エンドポイントの約65.5%に不適切な使用例が存在 → 4つのカテゴリに分類（ドキュメント化されていない、動的な不一致、リターンしないパターン、型の不一致）
+調査： **使用例と出力例からOpenAPIの仕様を抽出し、Web APIドキュメントと比較、不適切なドキュメントの特性を調査** → エンドポイントの約65.5%に不適切な使用例が存在 → 4つのカテゴリに分類（ドキュメント化されていない、動的な不一致、リターンしないパターン、型の不一致）
 
 Tag_Learning, Tag_API, Tag_Document, Tag_Survey  
 Tag_S_API, Tag_S_Code, Tag_S_Dev
@@ -703,40 +724,60 @@ ___
 
 ## Late Breaking Ideas (5 Ideas)
 
-- Title:
+- Title: Interactive Traceability Links Visualization using Hierarchical Trace Map (Idea)
+>  
+背景： Traceability Link の確立はコストがかかる → 自動化に期待が集まる → リンクの結果は平凡なマトリクス・二次元のグラフィック形式（つまり、表や木構造形式のビュー）で表示 → アーティファクト間の相互関係を一度に調査するのが困難  
+提案手法： アーティファクト間の関係を直観的に一度に調査するための階層的トレースマップの視覚化手法
+
+Tag_Traceability, Tag_Visualization  
+Tag_S_Late_Breaking_Ideas
+
+表やグラフから手動で関係を計算しないといけないのは確かにめんどくさい。 が、やっているのはグラフのパス探索問題みたいな気がしているが…
+___
+
+- Title: Supporting Software Architecture Maintenance by Providing Task-specific Recommendations (Idea)
+>  
+背景： 開発者をサポートする情報はあっちこっちに分散されている場合が多い、アーキテクチャの文書も古くなっている可能性  
+提案手法： ソフトウェアのメンテナンス中に発生する具体的な情報ニーズからリコメンドを提供する手法
+
+Tag_Human, Tag_Recommend, Tag_Dev  
+Tag_S_Late_Breaking_Ideas
+___
+
+- Title: A Validation Method of Self-Adaptive Strategy Based on POMDP (Idea)
+>  
+背景： Self-Adaptive Systems (SASs) は調整戦略によって変更の適用を動的に調整可能 → 戦略の効率性は動的要素に影響を受ける → 戦略を決定する前に検証をすべきだが、動的情報が限定的になるという仮定を無視している（正確に検証できていない）  
+提案手法： 部分的に観測可能なマルコフ決定プロセスに基づいた戦略検証方法 → 限定的な情報から状態の記述をサポート、実行時に戦略が要件を満たしているかの検証方法、効果的な戦略を素早く得るための戦略修正方法
+
+Tag_SAS, Tag_Markov_Decision_Process, Tag_State_Machine  
+Tag_S_Late_Breaking_Ideas
+
+SASの具体例が分かっていないのでピンと来ていない。戦略の決定には多くの情報が必要だが、動的には一部の情報しか手に入らんのでツライという前提。
+___
+
+- Title: Modeling the Relationship Between Identifier Name and Behavior (Idea)
 >  
 背景：  
-提案手法：  
+調査： **識別子の自然言語とプログラムのセマンティクスの相関** モデルの機能について解説 → 品詞情報と静的分析から、セマンティクスと識別子の自然言語的意味の相関を調査
+
+Tag_Natural, Tag_Learning, Tag_Static_Analysis, Tag_Survey  
+Tag_S_Late_Breaking_Ideas
+
+Abst短い論文2号。 識別子の意味論とプログラムの意味論の相関についての見解。
+___
+
+- Title: Lib Metamorphosis: A Performance Analysis Framework for Exchanging Data Structures in Performance Sensitive Applications (Idea)
+>  
+背景： ソフトウェアがパフォーマンス要件を満たさない → コア部分のデータ構造を変更、変更の影響も監視 → 経済的コスト、進化の妨げ → 開発者は根本的な修正を忌避するようになる → データ構造のリファクタリングをサポートするツールが必要  
+提案手法： テストスイートを利用して正確性を維持、入れ替え前後のデータ構造のパフォーマンスを自動測定するツール  
 実装：  
 実験：
 
-- Title:
->  
-背景：  
-提案手法：  
-実装：  
-実験：
+Tag_Refactoring, Tag_Data_Structure, Tag_Dev, Tag_Cost  
+Tag_S_Late_Breaking_Ideas
 
-- Title:
->  
-背景：  
-提案手法：  
-実装：  
-実験：
-
-- Title:
->  
-背景：  
-提案手法：  
-実装：  
-実験：
-
-- Title:
->  
-背景：  
-提案手法：  
-実装：  
-実験：
+データ構造変えると実際修正コストは大きい（何度かつらい思い）。 とはいえ、どちらかというとリファクタリングを自動化してくれたほうが嬉しい気もする（パフォーマンス測定もコストがかかるのは分かるが）
+___
 
 ## Testing (2 Researches, 1 Journal, 2 Shorts)
 
@@ -764,12 +805,12 @@ ___
 
 - Title: Concrete hyperheuristic framework for test case prioritization (Journal)
 >  
-背景： テストケースの優先順位付け (Test Case Prioritization: TCP) → 最適化のために色々なアルゴリズムが検討 → 新しいテストシナリオに対して、適切なアルゴリズムの決定は困難  
+背景： テストケースの優先順位付け (Test Case Prioritization: TCP) → 最適化のために色々なアルゴリズムが検討 → **新しいテストシナリオに対して、適切なアルゴリズムの決定は困難**  
 提案手法： hyperheuristic に基づいた一般的に適用可能な search-based TCP を提案 → 様々なアルゴリズムを包含、シナリオを学習し、適切な戦略を動的に選択  
 実装：  
 実験： 適切にアルゴリズムを選択できている
 
-Tag_Test, Tag_Learning, Tag_Metrix  
+Tag_Test, Tag_Learning, Tag_Metrix, Tag_Priority  
 Tag_S_Test
 
 テストケースの実行順を決定する戦略を決定する戦略についての論文。
@@ -790,7 +831,7 @@ ___
 
 - Title: DeepEvolution: A Search-based testing approach for Deep Neural Networks (Short)
 >  
-背景： Deep Learning へのテストケースの自動生成が開発されてきている → Rondom Fuzzingや変換（常に有効な多様性を持つテストケースを生成するわけではない）に依存 → 有効性が阻害  
+背景： **Deep Learning へのテストケースの自動生成** が開発されてきている → Rondom Fuzzingや変換（常に有効な多様性を持つテストケースを生成するわけではない）に依存 → 有効性が阻害  
 提案手法： DeepEvolution search-based のDLモデルをテストする新手法  
 実装：  
 実験： ニューロンカバレッジが大幅に増加（いくつかのコーナーケースも発見） → Tensorfuzzよりも優れていた
@@ -816,7 +857,7 @@ ___
 
 - Title: Performance-Influence Model for Highly Configurable Software with Fourier Learning and Lasso Regression (Research)
 >  
-背景： システム構成とそのパフォーマンスの推定は大事 → 構成の組み合わせが指数関数的 → 全構成でパフォーマンスを測定するのは非現実的  
+背景： システム構成とそのパフォーマンスの推定は大事 → **構成の組み合わせが指数関数的 → 全構成でパフォーマンスを測定するのは非現実的**  
 提案手法： PerLasso フーリエ学習とLasso Regressionに基づいたパフォーマンスモデリング＆予測手法 → 構成サンプルからパフォーマンスを学習（影響モデルを生成）、フーリエ係数を減らすための新しい次元削除アルゴリズムも提案  
 実装：  
 実験： 4つの合成データセットと6つの実際のデータセットで評価 → 有効（vs 既存のパフォーマンス影響モデル）
@@ -841,7 +882,7 @@ ___
 - Title: Comparing Constraints Mined From Execution Logs to Understand Software Evolution (Short)
 >  
 背景： システム開発で、変更の影響を理解するのは大抵困難 → 変更の影響分析について多く提案されている  
-提案手法： 変更前と変更後の実行ログから実行時の制約を比較する手法 → マイニングされた制約を定期的なイベントの予想タイミングと順序、データ要素の値として定義 → 違いを提供することで影響分析をサポート  
+提案手法： **変更前と変更後の実行ログから実行時の制約を比較する手法** → マイニングされた制約を定期的なイベントの予想タイミングと順序、データ要素の値として定義 → 違いを提供することで影響分析をサポート  
 実装：  
 実験： ソフトウェアの進化の理解に貢献できそう
 
@@ -853,7 +894,7 @@ ___
 
 - Title: Synthesizing Program Execution Time Discrepancies in Julia Used for Scientific Software (Short)
 >  
-背景： 科学ソフトウェア（データ分析を用いて知見を得るソフトウェア） → 開発にはJuliaという言語が使われることがあるが、実行時間の見積もりができないのでタスクが効率的に完了できない  
+背景： 科学ソフトウェア（データ分析を用いて知見を得るソフトウェア） → 開発にはJuliaという言語が使われることがあるが、**実行時間の見積もりができないのでタスクが効率的に完了できない**  
 調査： StackOverflowの投稿から実行時間の不一致（想定と違う）についての原因の特定を試みる → 263のJulia関連の投稿について定性分析 → 9つのカテゴリに分類、10個の原因を特定（配列内包の表記で不必要なメモリ割り当てが発生した場合など）
 
 Tag_Julia, Tag_Learning, Tag_StackOverflow, Tag_Survey  
@@ -923,30 +964,48 @@ ___
 
 ## Architecture (3 Researches, 1 Industry)
 
-- Title:
+- Title: Assuring the Evolvability of Microservices: Insights into Industry Practices and Challenges (Research)
 >  
-背景：  
-提案手法：  
-実装：  
-実験：
+背景： マイクロサービスはソフトウェアの進化について好影響（技術的負債の処理など）があるが、どの行動がそれを促しているのかは不透明 → Evolvability を保証するプロセスなどを調査  
+調査： 10社のソフトウェア専門家と14のマイクロサービスについて17回の半構造化された面接を実施 → Evolvability をどのように確保したかを議論 → 外部顧客向けシステムでは保証が中央ガバナンスに依存、アーキテクチャの原則が重要、自動化のツールとサポートが重要。 報告される問題のほとんどが Architectural Technical Debt (ATD) に関連 → それに対して指向したツールとメトリクスを使用していない
 
-- Title:
->  
-背景：  
-提案手法：  
-実装：  
-実験：
+Tag_Evolvability, Tag_Survey, Tag_Technical_Debt, Tag_Microservice  
+Tag_S_Architecture
 
-- Title:
->  
-背景：  
-提案手法：  
-実装：  
-実験：
+すでに参照数がそこそこ（6件）。 なんだが、いまだに Evolvability が何なのか説明できぬ。 結構な頻度で出てくるあたり、重要な概念なのか？
+___
 
-- Title:
+- Title: Investigating instability architectural smells evolution: an exploratory case study (Research)
 >  
-背景：  
-提案手法：  
-実装：  
-実験：
+背景： Architectural Smells はメンテコストを増大させる可能性（潜在的なリファクタリングに注意する必要性） → 開発者たちは直観で知っているが、具体的に体系化されていない  
+調査： 時間経過と Architectural Smell のインスタンスの進化、インスタンスを定義する特性との相関を調査 → Smell は3タイプに分類、14のプロジェクトから524バージョンからマイニング → 各匂いの影響をめっちゃ受ける
+
+Tag_Code_Smell, Tag_Survey, Tag_Architecture, Tag_Version  
+Tag_S_Architecture
+
+またわからない概念が出てきたぞ…。 何やらヤバげなアーキテクチャ構成のことを言っているのか？
+___
+
+- Title: A Qualitative Study on Framework Debugging (Research)
+>  
+背景： フレームワークの機能については、シーケンシャルプログラムに比べてプログラミング、デバッグの戦略をより調整しないといけない → が、フレームワークのデバッグの利点と課題は未整理  
+調査： フレームワークAPIを用いたアプリの開発者について2つ(Android Fragment class, ROS Framework)の人間的調査を実施 → 一般的な問題への作成済みの解法が役立つ、フレームワークが何を抽象化しているのかを理解するのが難しい → フレームワークのデバッグ固有の問題がある
+
+Tag_API, Tag_Framework, Tag_Survey, Tag_Debug  
+Tag_S_Architecture
+
+つまるところ、フレームワーク利用時のデバッグではフレームワークの公式Q&Aと、その用途の明確化が大事、ということ？
+___
+
+- Title: Adoption, Support, and Challenges of Infrastructure-as-Code: Insights from Industry (Industry)
+>  
+背景： IaCは機械的に読み取り可能な定義ファイルを使ってインフラを管理する戦略 → エンジニアリング技術として関心が高い  
+調査： 多数の企業の上級開発者への44の半構造化面接を実施 → IaCの採用における実践の現状、SEの課題を整理 → IaCの採用・開発手法、現在利用可能なサポートツールの利点欠点、IaCを扱う開発者のニーズ
+
+Tag_IaC, Tag_Dev, Tag_Human, Tag_Survey  
+Tag_S_Architecture
+
+IaC三度。 この記述だとIaCはXMLとかの設定ファイルのことを指している…？ 前の論文で出てきたのはIaCスクリプトだかた少し毛色が違う感はあるが。
+___
+
+Tag_SurveyとTag_Practiceをしっかり分けたほうがいい感（現状だと何でもかんでもSurveyになってまう）
