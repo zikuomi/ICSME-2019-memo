@@ -89,9 +89,9 @@ ___
 - Title: Do Energy-oriented Changes Hinder Maintainability? (Research)
 >  
 背景： モバイルアプリにおいてエネルギー効率も重要な品質要件 → が、効率の改善は簡単ではない  
-調査： エネルギー効率を改善するための変更とその影響を調査 → 539のエネルギー効率関連のコミットについて Better Code Hub (BCH) を用いて保守性の変化を測定 → エネルギー効率向上の変更によって保守性が低下する（特に省電力モードとウェイクロック追加のエネルギーパターン関連のコード変更で顕著）
+調査： **エネルギー効率を改善するための変更とその影響を調査** → 539のエネルギー効率関連のコミットについて Better Code Hub (BCH) を用いて保守性の変化を測定 → エネルギー効率向上の変更によって保守性が低下する（特に省電力モードとウェイクロック追加のエネルギーパターン関連のコード変更で顕著）
 
-Tag_Efficiency, Tag_Physical, Tag_Survey, Tag_Android  
+Tag_Efficiency, Tag_Hardware, Tag_Survey, Tag_Android  
 Tag_S_Mobile
 
 モバイルアプリを開発したことないからあまりピンときていないけど、大抵はCPUの使用率を下げる（実行命令数を少なくする）ように実装するとエネルギー消費が低下するのか？ もちろんハードウェアの機能毎に消費量が違うから重み付けはしないといけないけど
@@ -99,7 +99,7 @@ ___
 
 - Title: Can Everyone use my app? An Empirical Study on Accessibility in Android Apps (Research)
 >  
-背景： ユニバーサルデザイン（様々なステータスの利用者を想定する）はアクセシビリティの向上を目的とする → アプリケーション開発者はアクセシビリティのサポートをどれだけ利用しているのかは不明瞭  
+背景： ユニバーサルデザイン（様々なステータスの利用者を想定する）はアクセシビリティの向上を目的とする → **アプリケーション開発者はアクセシビリティのサポートをどれだけ利用しているのかは不明瞭**  
 調査： マイニングベースのパイロット調査を実施 → 開発者はアクセシビリティAPIをほとんど使用していない ＆ APIを補助する説明文の利用は限定的。 StackOverFlowでの投稿を調査 → 開発者視点の整理 → アクセシビリティの困難さ/理解不足を開発者は経験
 
 Tag_Accessibility, Tag_Design_Pattern, Tag_StackOverflow, Tag_Survey  
@@ -111,7 +111,7 @@ ___
 - Title: Quantifying the Performance Impact of SQL Antipatterns on Mobile Applications (Research)
 >  
 背景： ローカルデータベースはモバイルアプリの重要なコンポーネント → 使用にはコストが伴う（モバイルの中では最もリソースを消費するコンポーネントの一つ） → 不適切な使用はレスポンス性に深刻な影響  
-調査： データベース使用の問題となるプログラミング方法を調査 → 文献レビューとベンチマーク調査
+調査： **データベース使用の問題となるプログラミング方法を調査** → 文献レビューとベンチマーク調査
 
 Tag_Database, Tag_Resource, Tag_Survey  
 Tag_S_Mobile
@@ -122,7 +122,7 @@ ___
 - Title: An Empirical Study of UI Implementations in Android Applications (Research)
 >  
 背景： UI のテストも自動化されてきた（Crawlersなど） → UI実装のメカニズムが大幅に変化  
-調査： UI実装のための自動化技術が抱えている問題を調査 → 実際のアプリの大規模セットを調査（時間経過に伴う実践の変化も） → 動的分析が完全性（誤検出をしない性質）の面で課題アリ、開発慣行が変化し静的解析による追加解析も使用頻度が増加
+調査： **UI実装のための自動化技術が抱えている問題を調査** → 実際のアプリの大規模セットを調査（時間経過に伴う実践の変化も） → 動的分析が完全性（誤検出をしない性質）の面で課題アリ、開発慣行が変化し静的解析による追加解析も使用頻度が増加
 
 Tag_UI, Tag_Test, Tag_Automation, Tag_Survey  
 Tag_S_Mobile
@@ -132,7 +132,7 @@ ___
 
 - Title: Same App, Different Countries: A Preliminary User Reviews Study on Most Downloaded iOS Apps (Short)
 >  
-背景： モバイルアプリのレビューに関する研究では、ユーザレビューには豊富な情報が含まれている、とのことだった → でもそれはアメリカ国内のレビューでしょ？他の国は？  
+背景： モバイルアプリのレビューに関する研究では、ユーザレビューには豊富な情報が含まれている、とのことだった → **でもそれはアメリカ国内のレビューでしょ？他の国は？**  
 調査： App Store のダウンロードトップ15のアプリ（2018年）の5か月間、9か国の英語圏の諸国からの300643のレビューを取得 → 3358件のレビューを手動で分類 → アメリカ国内での評価とは矛盾する要因アリ
 
 Tag_Review, Tag_Survey, Tag_iOS, Tag_Nation  
@@ -164,10 +164,10 @@ Tag_S_Debug
 どちらかというと実践についてのレポート？ 文章がコンガラガッテ主張がいまいち分からない
 ___
 
-- Title: An industrial study on the differences between pre-release and post-release bugs (Research)
+- Title: <font color="orange"> An industrial study on the differences between pre-release and post-release bugs </font> (Research)
 >  
 背景： バグは開発において頻繁に発生 → バグの早期（リリース前）の発見技術が研究されている  
-提案手法： リリース前に見つかるバグとリリース後に見つかるバグの特徴と違いについての産業的な研究を紹介 → 37の産業プロジェクトを分析、リリース前とリリース後に見つかるバグの違いを明文化  
+紹介： **リリース前に見つかるバグとリリース後に見つかるバグの特徴と違いについての産業的な研究** を紹介 → 37の産業プロジェクトを分析、リリース前とリリース後に見つかるバグの違いを明文化  
 調査結果： リリース後のバグの修正のほうが難度が高そう、複数の言語で記述されたソースコードや構成ファイルの更新も必要になる → リリース後のバグの約82%についてコードの追加が必要
 
 Tag_Release, Tag_Debug, Tag_Survey  
@@ -178,7 +178,7 @@ ___
 
 - Title: Not all bugs are the same: Understanding, characterizing, and classifying bug types (Journal)
 >  
-背景： GitやSVNなどのバージョン管理システムはバグ追跡メカニズムが存在 → 開発者はバグレポートからバグを認知可能  → トリアージ（分類）補助の研究は色々あるが、報告されたバグの分類を理解を補助する手法の研究は少ない  
+背景： GitやSVNなどのバージョン管理システムはバグ追跡メカニズムが存在 → 開発者はバグレポートからバグを認知可能  → **トリアージ（分類）補助の研究は色々あるが、報告されたバグの分類を理解を補助する手法の研究は少ない**  
 調査： 1) Mozilla, Apache, Eclipse などに属する119のプロジェクトの1280のバグレポートを分析 2) 自動分類モデルを考案、評価 → システム全体のバグ原因を9つに分類、モデルは高いF値 64%を達成
 
 Tag_Triaging, Tag_Debug, Tag_Review, Tag_Modeling  
@@ -201,7 +201,15 @@ Tag_S_Debug
 バグレポートに必要な情報が全然ないことはままある（どういうバグなのか、どういう設定なのかとか）。 個人的には興味あり
 ___
 
+</details>
+</div>
+
 ## AI Application (2 Researches, 1 Industry, 2 Shorts)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: Tracing with Less Data: Active Learning for Classification-Based Traceability Link Recovery (Research)
 >  
@@ -231,7 +239,7 @@ ___
 
 - Title: An Approach to Recommendation of Verbosity Log Levels Based on Logging Intention (Industry)
 >  
-背景： ログの冗長度は色々なランタイムイベントの識別に有用 → 各ログステートメントに適切に割り当てる必要あり（不適切だと混乱を招く） → ガイドラインがないので達成が難しい → 既存研究では定量的メトリクス（ログの密度など）でロギング特性を明確にしているが、ログ内部まで見ていないのでレベルの決定への貢献は限定的  
+背景： **ログの冗長度は色々なランタイムイベントの識別に有用 → 各ログステートメントに適切に割り当てる必要あり（不適切だと混乱を招く）** → ガイドラインがないので達成が難しい → 既存研究では定量的メトリクス（ログの密度など）でロギング特性を明確にしているが、ログ内部まで見ていないのでレベルの決定への貢献は限定的  
 提案手法： VerbosityLevelDirector ログレベルの決定を自動化する手法 → ログを行うコードコンテキス関数に基づく  
 実装：  
 実験： 4つのOSSプロジェクトで効果を測定 → VLDはレベルの識別に高いパフォーマンスを発揮、ベースラインアプローチよりも優れている。 また、不適切なレベルの構成を検出可能
@@ -268,7 +276,15 @@ Tag_S_Learning
 セキュリティ関連のテキストかどうかを識別する学習。 これ識別できると何がうれしいんだろう。
 ___
 
+</details>
+</div>
+
 ## Clones and Refactoring (2 Researches, 1 Industry, 2 Shorts)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: TECCD: A Tree Embedding Approach for Code Clone Detection (Research)
 >  
@@ -285,7 +301,7 @@ ___
 
 - Title: Investigating Context Adaptation Bugs in Code Clones (Research)
 >  
-背景： 不適切なコードクローン（コードのコピペ）はバグを誘発するという考えがある → が、詳しく調査はされていない（バグが発生したコード内にコードクローンがあるかの研究はある）  
+背景： **不適切なコードクローン（コードのコピペ）はバグを誘発するという考えがある** → が、詳しく調査はされていない（バグが発生したコード内にコードクローンがあるかの研究はある）  
 調査： コードクローン由来のバグ（コンテキスト適応バグ、コンテキストバグ） を2つのパターンを定義して分析 → Java, C, C# で記述された6つのOSSプロジェクトで調査 → 結構バグあるぞよ → クローン関連のバグ修正は50%がコンテキストバグの修正の可能性（特に異なるリビジョン、ファイル間のクローンでは確率が上昇する傾向）
 
 Tag_Code, Tag_Clone, Tag_Debug, Tag_Survey  
@@ -296,12 +312,12 @@ ___
 
 - Title: Decomposing God Classes at Siemens: A Visualization tool and approach (Industry)
 >  
-背景： God Class への対処などを含めた3年間のレガシーシステムの再構築  
+背景： **God Class への対処など** を含めた3年間のレガシーシステムの再構築  
 提案手法： ソフトウェアの視覚化ツールとそれに伴うプロセス → 事前知識なしで、God Classの分解が 1、2時間でできるようになった（一般には1週間かかることもある）  
 実装：  
 実験：
 
-Tag_Design_Pattern, Tag_Restructure, Tag_Visualization  
+Tag_Design_Pattern, Tag_Restructure, Tag_Visualization, Tag_Practice  
 Tag_S_Refactoring
 
 二件目のGod Class関連論文（Practice）。 God Classって意外とレガシーシステムにも多いのだろうか。 もしレガシーシステムの保守などをするのであれば、気になる論文（God Class限定だとちょい局所的だが）
@@ -309,12 +325,12 @@ ___
 
 - Title: Tracy: A Business-driven Technical Debt Prioritization Framework (Short)
 >  
-背景： 技術的負債は開発において蔓延っている状況 → 開発チームは優先順位を付けてる必要がある  
+背景： **技術的負債は開発において蔓延っている状況** → 開発チームは優先順位を付けてる必要がある  
 提案手法： Tracy 技術的負債の優先順位付けを行うためのフレームワーク → 探索、エンジニアリング、評価の3フェーズが開発プランとしてあり、現在評価フェーズ  
 実装：  
 実験： 3社12グループ49人で評価 → 優先順位付けがビジネスの意思決定に貢献できる可能性
 
-Tag_Dev, Tag_Metrix, Tag_Cost, Tag_Technical_Debt  
+Tag_Dev, Tag_Metrix, Tag_Cost, Tag_Technical_Debt, Tag_Priority  
 Tag_S_Refactoring
 
 Technical Debt: 技術的負債。 選択した解決策に付随する追加コストを反映すること。（本当に低コストなのかを調べること？）  
@@ -332,11 +348,19 @@ Tag_S_Refactoring
 結局SATDが何なのか分らぬ…（Admittanceの適当な訳が分からん）。 あくまでリファクタリングとの因果関係までは調査していない模様なので、過信しすぎないよう
 ___
 
+</details>
+</div>
+
 ## Change (2 Researches, 1 journal, 2 Shorts)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: Identifying the Within-Statement Changes to Facilitate Change Understanding (Research)
 >  
-背景： 現在の木差分手法はステートメント内部の粒度になると、その更新を表現できない  
+背景： 現在の木差分手法は **ステートメント内部の粒度になると、その更新を表現できない**  
 提案手法： ChangeDistiller ステートメント内の変更を識別するための木差分手法 → 編集操作を計算、各操作のメタデータを作成（操作タイプ、エンティティのタイプ、コンテンツなど関連する全参照を包含）  
 実装：  
 実験： 4つのOSSプロジェクトで条件式の変更を調査 → 状態に影響を与えるかなどを調査 → 20%が重要ではない変更、60%以上が効果的な変更を含む → また、多くの共通パターンを発見
@@ -349,7 +373,7 @@ ___
 
 - Title: Aiding Code Change Understanding with Semantic Change Impact Analysis (Research)
 >  
-背景： コードレビューは変更とその影響を手動で調べることになるが、領域外への影響については調べるのが難しい → 差分による影響解析は有望な手法  
+背景： コードレビューは変更とその影響を手動で調べることになるが、**領域外への影響については調べるのが難しい → 差分による影響解析は有望な手法**  
 提案手法： 構文変更ではなく意味変更の影響を抽出する新手法（JSを対象） → 4つの意味的変化の影響関係の定義、JSプログラムの部分的構造変化を解釈、関係の抽出  
 実装：  
 実験： 3つのNodeJSアプリケーションの2000コミットで評価 → FPを9-37%削減、変更の影響範囲サイズを19-91%削減
@@ -362,18 +386,18 @@ ___
 
 - Title: Why is my code change abandoned? (Journal)
 >  
-背景： すべてのコード変更がマージされるわけではない → マージされない変更は破棄や再送信が発生するので、コストが嵩む（あるいは無駄が発生する）ことになる  
+背景： すべてのコード変更がマージされるわけではない → **マージされない変更は破棄や再送信が発生するので、コストが嵩む（あるいは無駄が発生する）ことになる**  
 調査： 4つのOSSプロジェクト（ Eclipse, LibreOffice, OpenStack, Qt ）で変更破棄の理由を調査 → 1459の破棄された変更を手動で分析、ラベル付け、12のカテゴリに分類 → 分布を調査 → 破棄変更の大半は冗長な変更（すでに変更済み）、12のカテゴリの分布は4つのプロジェクトで類似、破棄される場合、1年以内に98.39%が破棄
 
-Tag_Version, Tag_Survey, Tag_Merge  
+Tag_Version, Tag_Survey, Tag_Merge, Tag_Categorization  
 Tag_S_Change
 
 破棄理由のサーベイ、バージョン管理系の研究をするなら面白そうかも
 ___
 
-- Title: Towards Generating Transformation Rules without Examples for Android API Replacement (Short)
+- Title: <font color="orange"> Towards Generating Transformation Rules without Examples for Android API Replacement </font> (Short)
 >  
-背景： あるAPIが使えなくなると、そのAPIを利用しているプログラムの開発者は遅かれ早かれAPIを置換せにゃならぬ → 代替APIの使い方が正確に把握できないと、置き換えが困難になる可能性 → API変更の理解が大事  
+背景： **あるAPIが使えなくなると、そのAPIを利用しているプログラムの開発者は遅かれ早かれAPIを置換せにゃならぬ** → 代替APIの使い方が正確に把握できないと、置き換えが困難になる可能性 → API変更の理解が大事  
 提案手法： No Example API Transformation (NEAT) Android API について非推奨となったAPIの置換を支援 → 置換ルールを生成  
 実装：  
 実験： 100の非推奨APIから37について正しい置換ルールを生成
@@ -386,20 +410,28 @@ ___
 
 - Title: How Do Code Changes Evolve in Different Platforms? A Mining-based Investigation (Short)
 >  
-背景： コードの変更はモバイルプラットフォームか否かで方法が異なる → プラットフォームの違いがコード変更の進化 (evolve) にどう影響するかは未調査  
+背景： コードの変更はモバイルプラットフォームか否かで方法が異なる → **プラットフォームの違いがコード変更の進化 (evolve) にどう影響するかは未調査**  
 調査： 変更頻度、ソースコード、ビルド、テストの変更がモバイル/非モバイルでどのように共進化するのかを調査 → 非モバイルでは1月あたりのコミット数が多い、モバイルでは混乱要素を制御する場合にはコミット数が極端に減る
 
-Tag_Code, Tag_Mobile, Tag_Survey, Tag_Co_Evolve  
+Tag_Code, Tag_Mobile, Tag_Survey, Tag_Co_Evolve, Tag_Evolvability  
 Tag_S_Change
 
 共進化(Co-Evolution/Co-Evolve)再び。 うーむ。 Abst読む限りだと、コミット数にしか変化がなかったように見えちゃう
 ___
 
+</details>
+</div>
+
 ## Testing and Coding (2 Researches, 1 Industry, 2 Shorts)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: How the Experience of Development Teams Relates to Assertion Density of Test Classes (Research)
 >  
-背景： ソフトウェアテストでは開発者の経験が活きる（経験が活かされる有望株がテスト）  
+背景： **ソフトウェアテストでは開発者の経験が活きる（経験が活かされる有望株がテスト）**  
 調査： 開発チームの経験とアサーション密度（テストクラスのKLOCあたりのアサーション数）との相関を調査 → チームの経験などを12のソフトウェアプロジェクトのテストクラスのアサーション密度と関連付けるモデルを構築 → 57人の開発者への調査と統計モデルを比較 → 関係ありという結果
 
 Tag_Human, Tag_Test, Tag_Assert, Tag_Survey  
@@ -410,7 +442,7 @@ ___
 
 - Title: Automatic Discovery and Cleansing of Numerical Metamorphic Relations (Research)
 >  
-背景： Metamorphic Relations (MR: 変性関係) → プログラムの入出力の間の Invariant   
+背景： **Metamorphic Relations (MR: 変性関係) → プログラムの入出力の間の Invariant**   
 提案手法： AutoMR 体系的にMRを推論する新手法 → Particle Swarm Optimization を通じて色んな等式 MR、不等式 MRを検出 → 冗長なMRも削除可能  
 実装：  
 実験： AutoMRが正確かつ簡潔なMRを効果的に推論 (vs state-of-the-art approach)
@@ -421,14 +453,14 @@ Tag_S_Test
 プログラムの入出力間のInvariantとなると、Invariantをボトムアップ的に（Statement→Method→Class→Program）積み上げていく感じだろうか。 ある意味モデリングと近い分野
 ___
 
-- Title: Slimming JavaScript Applications: an Approach for Removing Unused Functions from JavaScript Libraries (Journal)
+- Title: <font color="orange"> Slimming JavaScript Applications: an Approach for Removing Unused Functions from JavaScript Libraries </font> (Journal)
 >  
-背景： JavaScript開発ではバンドル（アプリと依存ライブラリコード）をリリースするのが一般的 → バンドルの中に使わないライブラリが存在 → サイズの増加、応答性や処理の低下 → 静的解析で未使用コードを削除する研究はまだ改善の余地あり  
+背景： JavaScript開発ではバンドル（アプリと依存ライブラリコード）をリリースするのが一般的 → **バンドルの中に使わないライブラリが存在 → サイズの増加、応答性や処理の低下 → 静的解析で未使用コードを削除する研究はまだ改善の余地あり**  
 提案手法： Unused Foreign Function (UFF) の概念を定義、UFFを識別する動的アプローチ  
 実装：  
 実験： 22のJSアプリケーションでのケーススタディ → 平均26%のサイズ削減が実現（最大66%）
 
-Tag_Library, Tag_UFF, Tag_Efficiency  
+Tag_Library, Tag_UFF, Tag_Efficiency, Tag_Static_Analysis  
 Tag_S_Test
 
 ライブラリ全体をインポートすると使わない関数も一緒に取り込まれちゃうのはよくある。 単純にライブラリ内の関数リストと使用された関数を比較しているだけ感はあるが、意外と盲点だったかも
@@ -436,12 +468,12 @@ ___
 
 - Title: Automated Identification of Over-Privileged SmartThings Apps (Short)
 >  
-背景： SmartThings → アプリがデバイスを直接叩かずに提供された関数を介して権限を取得する → この関数内に欠陥があると不正な権限取得へつながる → 時に深刻  
+背景： **SmartThings → アプリがデバイスを直接叩かずに提供された関数を介して権限を取得する** → この関数内に欠陥があると不正な権限取得へつながる → 時に深刻  
 提案手法： SmartThings の過剰権限の脆弱性を自動検出するツール → 一般的なパターンについてのパターンマッチ  
 実装：  
 実験： 222の公式アプリとTPCに対して評価 → 5.5%のデバイスで計76の過剰権限のインスタンスを検出
 
-Tag_Security, Tag_Debug, Tag_Mobile  
+Tag_Security, Tag_Debug, Tag_Mobile, Tag_Hardware  
 Tag_S_Test
 
 検出数がインスタンスなのが若干気になるところ（同じコンテキストのインスタンスが延べ数でカウントされてない？）
@@ -449,25 +481,33 @@ ___
 
 - Title: EmoD: An End-to-End Approach for Investigating Emotion Dynamics in Software Development (Short)
 >  
-背景： ソフトウェア開発において感情認識への関心が高まっている → 既存研究では感情の動的な性質（？）をスルー → あるタイミングでの感情しか抽出していない（連続性がない？）  
+背景： **ソフトウェア開発において感情認識への関心が高まっている** → 既存研究では感情の動的な性質（？）をスルー → あるタイミングでの感情しか抽出していない（連続性がない？）  
 提案手法： EmoD チーム内のコミュニケーション記録を自動収集し、その中の感情と強さを識別、感情ダイナミクスをモデル化  
 実装：  
 実験： 自動データ収集、モデリングなどを通じて、感情認識の実践を提供できていることを確認
 
-Tag_Human, Tag_Dev, Tag_Modeling  
+Tag_Human, Tag_Dev, Tag_Modeling, Tag_Learning  
 Tag_S_Test
 
 心理学みたいなことやってらっしゃる。 一般論として、汎用的な感情のモデリングなんてできるのかね？と懐疑的
 ___
 
+</details>
+</div>
+
 ## Text Analysis and Empirical Studies (2 Researches, 4 Shorts)
 
-- Title: Know-How in Programming Tasks: From Textual Tutorials to Task-Oriented Knowledge Graph (Research, Award)
+<div class="waku">
+<details open>
+
+___
+
+- Title: <font color="orange"> Know-How in Programming Tasks: From Textual Tutorials to Task-Oriented Knowledge Graph </font> (Research, Award)
 >  
-背景： タスク解決活動とそれらの関係、属性 → ノウハウ知識 → 一般にプログラミング関係のノウハウは半構造化されたテキスト → 3つの障壁（タスクインテントの非一貫性モデル、チュートリアル情報のオーバーロード、構造化されていないタスクアクティビティの説明） → 既存のナレッジグラフ (Knowledge Graph) はノウハウ情報（API, APIの警告, APIの依存関係など）のみを抽出  
+背景： タスク解決活動とそれらの関係、属性 → ノウハウ知識 → 一般にプログラミング関係のノウハウは半構造化されたテキスト → 3つの障壁（タスクインテントの非一貫性モデル、チュートリアル情報のオーバーロード、構造化されていないタスクアクティビティの説明） → **既存のナレッジグラフ (Knowledge Graph) はノウハウ情報（API, APIの警告, APIの依存関係など）のみを抽出**  
 提案手法： Open Information Extraction (OpenIE) 結果として得られるナレッジグラフ TaskKGにアクティビティの階層分類、3種類のアクティビティ関係、5種類のアクティビティ属性が包含  
 実装：  
-実験： Android Developer Guide に適用 → ユーザ調査で開発者がプログラミングのハウツーの期待通りの回答取得の支援に有望
+実験： Android Developer Guide に適用 → ユーザ調査で開発者がプログラミングの **ハウツーの期待通りの回答取得の支援に有望**
 
 Tag_Graph, Tag_Natural, Tag_Knowledge, Tag_Dev  
 Tag_S_Analysis, Tag_S_Studies
@@ -475,9 +515,9 @@ Tag_S_Analysis, Tag_S_Studies
 ナレッジグラフがどういうグラフを指すのかは分からないが、共同研究で参考になるかも
 ___
 
-- Title: An Empirical Study of Abbreviations and Expansions in Software Artifacts (Research)
+- Title: <font color="orange"> An Empirical Study of Abbreviations and Expansions in Software Artifacts </font> (Research)
 >  
-背景： 略語の展開は開発者の理解を深める → 略語が展開できないと、開発者はコード理解により多くの時間を消費する（もったいない） → 一般的な手法では精度が60%程度行けばいいほう  
+背景： **略語の展開は開発者の理解を深める → 略語が展開できないと、開発者はコード理解により多くの時間を消費する（もったいない）** → 一般的な手法では精度が60%程度行けばいいほう  
 調査： 略語とその略語がどこで発生するのかを調査 → 5つのOSSシステムから抽出された略語と展開のペアから、特性を明確にする → 特性から現在の手法を比較・評価
 
 Tag_Natural, Tag_Dev, Tag_Human, Tag_Survey  
@@ -489,9 +529,9 @@ ___
 - Title: Estimating Software Task Effort in Crowds (Short)
 >  
 背景： ソフトウェアメンテナンスにおいて、問題の改善と詳細化は重要 → 重要度、担当者、解決への推定コストなどの追加情報も必要  
-調査： クラウドワーカーを利用している場合の推定コストをプランニングポーカーを用いて見積もるための調査　→ 見積もりの利点の整理
+調査： **クラウドワーカーを利用している場合の推定コスト** をプランニングポーカーを用いて見積もるための調査　→ 見積もりの利点の整理
 
-Tag_Human, Tag_Dev, Tag_Survey, Tag_Crowed_Sourcing
+Tag_Human, Tag_Dev, Tag_Survey, Tag_Crowed_Sourcing, Tag_Cost
 Tag_S_Analysis, Tag_S_Studies
 
 Crowed Worker: クラウドソーシング（一般大衆の知見を利用して問題解決にあたる手法、不特定多数に外注する手法、誰かが解決してくれるだろうという期待）、 Planning Poker: マイクロソフトが出している（？）タスク見積もりのカード（ラフな感じ）  
@@ -500,7 +540,7 @@ ___
 
 - Title: Do as I Do, Not as I Say: Do Contribution Guidelines Match the GitHub Contribution Process? (Short)
 >  
-背景： GitHubなどでは、開発者に順守してほしい投稿ガイドラインを設定している → 実際にどれだけガイドラインが遵守されているかを体系的に調べられていない  
+背景： GitHubなどでは、開発者に順守してほしい投稿ガイドラインを設定している → **実際にどれだけガイドラインが遵守されているかを体系的に調べられていない**  
 調査： 53のGitHubプロジェクトについて調査 → プロセスモデルを作成、実際のアクティビティとガイドラインとを比較 → 訳68%が予想されるプロセスと大きく異なる（遵守していない）
 
 Tag_Github, Tag_Human, Tag_Dev, Tag_Survey  
@@ -512,7 +552,7 @@ ___
 - Title: An Analysis of 35+ Million Jobs of Travis CI (Short)
 >  
 背景： Travis CI → GitHubと提携しているCI支援のためのプラットフォーム  
-調査： Travis CI のユーザや利用開始の基準、構成を変更する頻度などを調査 → 利用者にはMicrosoftもいた、Travis上で最も人気の高いPythonはGitHubでは3番目、レポジトリセットアップから平均7日でTravisがセットアップ、Travis内のジョブの60%がテスト
+調査： **Travis CI のユーザや利用開始の基準、構成を変更する頻度などを調査** → 利用者にはMicrosoftもいた、Travis上で最も人気の高いPythonはGitHubでは3番目、レポジトリセットアップから平均7日でTravisがセットアップ、Travis内のジョブの60%がテスト
 
 Tag_Github, Tag_CI, Tag_Survey, Tag_Travis_CI  
 Tag_S_Analysis, Tag_S_Studies
@@ -523,15 +563,23 @@ ___
 - Title: Linguistic Change in Open Source Software (Short)
 >  
 背景： コード辞書 (code lexicon) は自然言語と同様に進化論の範疇にある（？）   
-調査： OSSのコード辞書の進化を統計的に分析 → 2000のOSSで調査 → 時間経過とともに言語的アイデンティティが大幅に変化する、コード辞書の構文構造が異なれば進化方法も異なる、メンテナンスアクティビティがコード辞書へ影響を与える
+調査： **OSSのコード辞書の進化を統計的に分析** → 2000のOSSで調査 → 時間経過とともに言語的アイデンティティが大幅に変化する、コード辞書の構文構造が異なれば進化方法も異なる、メンテナンスアクティビティがコード辞書へ影響を与える
 
-Tag_Survey, Tag_Co_Evolve, Tag_Natural, Tag_Code  
+Tag_Survey, Tag_Co_Evolve, Tag_Natural, Tag_Code, Tag_Evolvability, Tag_Statistical  
 Tag_S_Analysis, Tag_S_Studies
 
 コード辞書が何なのか調べてもピンと来ない（レシピブックみたいなもん？） そして度々出てくる進化のキーワード
 ___
 
+</details>
+</div>
+
 ## Coding and Repair (1 Research, 1 journal, 4 Shorts)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: Learning How to Mutate Source Code from Bug-Fixes (Research)
 >  
@@ -548,7 +596,7 @@ ___
 
 - Title: Five recommendations for software evolvability (Journal)
 >  
-背景： ソフトウェアの進化可能性 (evolvability) は3つの要素（進化するシステムプロパティ、人間的要素、進化の需要）の積  
+背景： **ソフトウェアの進化可能性 (evolvability) は3つの要素（進化するシステムプロパティ、人間的要素、進化の需要）の積**  
 解説： ソフトウェアの進化可能性を強化する5つの推奨事項について説明 → ソフトウェア変更の定義済みプロセス、コードの進化部分と安定部分の区別、分析可能なコードセグメント、重要な概念のカプセル化、ラッピングの回避
 
 Tag_Co_Evolve, Tag_Evolvability, Tag_Code, Tag_Human, Tag_Dev, Tag_Survey  
@@ -585,7 +633,7 @@ ___
 
 - Title: BarrierFinder: Recognizing Ad Hoc Barriers (Short)
 >  
-背景： アドホック同期はマルチスレッドプログラムで一般的になってきている → 多様かつ複雑なので、同期関係の近いは困難 → が、重要 → 既存手法は基本的なアドホック同期を部分的に検出可能 → 全実装を理解したり、強制同期を推測できない  
+背景： アドホック同期はマルチスレッドプログラムで一般的になってきている → 多様かつ複雑なので、同期関係の近いは困難 → が、重要 → 既存手法は基本的なアドホック同期を部分的に検出可能 → **全実装を理解したり、強制同期を推測できない**  
 提案手法： BarrierFinder 複雑なアド北同期を完全自動で識別する手法 → インターリーブの効率的な探索のためにプログラムスライスや制限付き記号実行を利用 → トレースを利用してアドホックバリアを識別  
 実装：  
 実験： 効果的かつ効率的という結果
@@ -603,13 +651,21 @@ ___
 実装：  
 実験： IntroClassJava ベンチマークから22個の置換変異バグを選択、評価 → 22個すべてを修復（精度100%）
 
-Tag_Patch, Tag_Debug, Tag_Learning  
+Tag_Patch, Tag_Debug, Tag_Learning, Tag_Priority  
 Tag_S_Code, Tag_S_Repair
 
 精度100%？ 俺は騙されんぞ（） インターセクションを取るからには、両方の尺度を正規化せにゃならんだろうけど、どうなんすかね
 ___
 
+</details>
+</div>
+
 ## APIs, Programming, and CI (1 Research, 2 Journals, 2 Shorts)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: Losing Confidence in Quality: Unspoken Evolution of Computer Vision Services (Research)
 >  
@@ -625,7 +681,7 @@ ___
 
 - Title: Live Programming in Practice: a Controlled Experiment on State Machines for Robotic Behaviors (Journal)
 >  
-背景： ライブプログラミングは複数の言語で利用されつつある → 現実的なシナリオや複雑なAPIを使用した場合の利点について未調査  
+背景： **ライブプログラミングは複数の言語で利用されつつある → 現実的なシナリオや複雑なAPIを使用した場合の利点について未調査**  
 調査： 機械的な動作を State Machine に落とし込み、ライブプログラミングの利点を分析 → プログラムの理解と作成を分析 → Robotic Behavior のコンテキストでは、プログラムの理解や速度・正確性の…で非ライブ言語を大幅に上回らない（大差ない）
 
 Tag_Live_Programming, Tag_Survey, Tag_State_Machine  
@@ -649,7 +705,7 @@ ___
 背景： APIの学習にドキュメントが利用されるが、そのドキュメントが信頼できない可能性もある  
 調査： **使用例と出力例からOpenAPIの仕様を抽出し、Web APIドキュメントと比較、不適切なドキュメントの特性を調査** → エンドポイントの約65.5%に不適切な使用例が存在 → 4つのカテゴリに分類（ドキュメント化されていない、動的な不一致、リターンしないパターン、型の不一致）
 
-Tag_Learning, Tag_API, Tag_Document, Tag_Survey  
+Tag_Learning, Tag_API, Tag_Document, Tag_Survey, Tag_Categorization  
 Tag_S_API, Tag_S_Code, Tag_S_Dev
 
 鷲崎先生の論文。 ドキュメント内の矛盾を識別する調査？
@@ -657,7 +713,7 @@ ___
 
 - Title: What Do Developers Discuss about Biometric APIs? (Short)
 >  
-背景： 生体認証技術は非常に関心が強くなってきている → が、そのAPIについて使用方法を説明している文書は十分ではない → 利用する開発者の負担大（頻繁にAPIが更新されることも一因）  
+背景： **生体認証技術は非常に関心が強くなってきている → が、そのAPIについて使用方法を説明している文書は十分ではない** → 利用する開発者の負担大（頻繁にAPIが更新されることも一因）  
 調査： Stack Overflow, Neurotechnology などのオンラインメディアから生体認証API関連の投稿500件を手動で分析 → 発生問題のほとんどで正確なドキュメントが欠如が原因、生体認証APIの非互換性が複数の実装環境でまたがっている
 
 Tag_API, Tag_Document, Tag_StackOverflow, Tag_Survey  
@@ -666,11 +722,19 @@ Tag_S_API, Tag_S_Code, Tag_S_Dev
 生体認証はデバイスも絡んでくるから通常の開発とは経路が違う。 結局はAPIのガイドラインやドキュメントが不十分だぞ、ということを言いたい？
 ___
 
+</details>
+</div>
+
 ## Perspective (1 Research, 4 Industries)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: Teaching Software Maintenance (Research)
 >  
-実践： アメリカの大学二年生（メンテナンス入門生）のソフトウェアメンテナンスの授業で、扱うプロジェクトの規模を大きくしてみた場合の利点についての実践レポート → ソフトウェアエンジニアリングの主要なトピックについて導入が簡単になった、OSSコミュニティへの有意義な貢献が示された
+実践： **アメリカの大学二年生（メンテナンス入門生）のソフトウェアメンテナンスの授業で、扱うプロジェクトの規模を大きくしてみた場合の利点についての実践レポート** → ソフトウェアエンジニアリングの主要なトピックについて導入が簡単になった、OSSコミュニティへの有意義な貢献が示された
 
 Tag_Human, Tag_Teaching, Tag_Practice  
 Tag_S_Perspective
@@ -680,7 +744,7 @@ ___
 
 - Title: Continuous Collateral Privacy Risk Auditing of Evolving Autonomous Driving Software (Industry)
 >  
-背景： 自動運転の技術では多くのセンサーの情報を収集 → プライバシーとつながる可能性（リスク） → Collateral Privacy Risk  
+背景： 自動運転の技術では多くのセンサーの情報を収集 → **プライバシーとつながる可能性（リスク） → Collateral Privacy Risk**  
 実践： Apollo プロジェクトでのプライバシーリスクについて分析 → 未解決の問題も残ったが、ソースコードベースの監査手法から予備結果を出力 → 監査の過程でバージョンが3.0から3.5へ → その過程の経験と困難をレポート化
 
 Tag_Hardware, Tag_Practice, Tag_Security  
@@ -692,7 +756,7 @@ ___
 - Title: Challenges in re-platforming mixed language PL/I and COBOL IS to an open systems platform (Industry)
 >  
 背景： 再プラットフォーム化 (re-platforming: レガシーシステムを新しいプラットフォームへ移行すること) はレガシーシステム保守のコスト削減の矢面に立つ → 技術的・組織的課題が伴う（コスト削減したいんだけど難しい）  
-解説： 再プラットフォーム化の課題と解決策を提示。 40年前のPL/I、COBOLアプリケーションの再プラットフォーム化で得られた教訓について説明
+解説： 再プラットフォーム化の課題と解決策を提示。 **40年前のPL/I、COBOLアプリケーションの再プラットフォーム化で得られた教訓について説明**
 
 Tag_Practice, Tag_Cost  
 Tag_S_Perspective
@@ -716,13 +780,21 @@ ___
 
 - Title: Lessons Learned from Large-Scale Refactoring (Industry)
 >  
-説明： Googleでは数億行のコードを含む大規模な多言語コードベースを維持 → 過去数年にわたり、所属チームでコードベースを大規模に効率的に更新するプロセスを開発 → 学んだ教訓と未解決の問題について説明
+説明： Googleでは数億行のコードを含む大規模な多言語コードベースを維持 → 過去数年にわたり、**所属チームでコードベースを大規模に効率的に更新するプロセスを開発** → 学んだ教訓と未解決の問題について説明
 
 Tag_Practice, Tag_Google  
 Tag_S_Perspective
 ___
 
+</details>
+</div>
+
 ## Late Breaking Ideas (5 Ideas)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: Interactive Traceability Links Visualization using Hierarchical Trace Map (Idea)
 >  
@@ -778,6 +850,9 @@ Tag_S_Late_Breaking_Ideas
 
 データ構造変えると実際修正コストは大きい（何度かつらい思い）。 とはいえ、どちらかというとリファクタリングを自動化してくれたほうが嬉しい気もする（パフォーマンス測定もコストがかかるのは分かるが）
 ___
+
+</details>
+</div>
 
 ## Testing (2 Researches, 1 Journal, 2 Shorts)
 
@@ -897,7 +972,7 @@ ___
 背景： 科学ソフトウェア（データ分析を用いて知見を得るソフトウェア） → 開発にはJuliaという言語が使われることがあるが、**実行時間の見積もりができないのでタスクが効率的に完了できない**  
 調査： StackOverflowの投稿から実行時間の不一致（想定と違う）についての原因の特定を試みる → 263のJulia関連の投稿について定性分析 → 9つのカテゴリに分類、10個の原因を特定（配列内包の表記で不必要なメモリ割り当てが発生した場合など）
 
-Tag_Julia, Tag_Learning, Tag_StackOverflow, Tag_Survey  
+Tag_Julia, Tag_Learning, Tag_StackOverflow, Tag_Survey, Tag_Categorization  
 Tag_S_Configuration
 
 ここでの実行時間の不一致は数時間とか数日とかの単位でいいのかね？ Juliaという言語は知らんかった
