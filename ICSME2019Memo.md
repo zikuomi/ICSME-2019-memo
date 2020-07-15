@@ -798,10 +798,10 @@ ___
 
 - Title: Interactive Traceability Links Visualization using Hierarchical Trace Map (Idea)
 >  
-背景： Traceability Link の確立はコストがかかる → 自動化に期待が集まる → リンクの結果は平凡なマトリクス・二次元のグラフィック形式（つまり、表や木構造形式のビュー）で表示 → アーティファクト間の相互関係を一度に調査するのが困難  
+背景： Traceability Link の確立はコストがかかる → 自動化に期待が集まる → **リンクの結果は平凡なマトリクス・二次元のグラフィック形式（つまり、表や木構造形式のビュー）で表示 → アーティファクト間の相互関係を一度に調査するのが困難**  
 提案手法： アーティファクト間の関係を直観的に一度に調査するための階層的トレースマップの視覚化手法
 
-Tag_Traceability, Tag_Visualization  
+Tag_Traceability, Tag_Visualization, Tag_Graph  
 Tag_S_Late_Breaking_Ideas
 
 表やグラフから手動で関係を計算しないといけないのは確かにめんどくさい。 が、やっているのはグラフのパス探索問題みたいな気がしているが…
@@ -809,7 +809,7 @@ ___
 
 - Title: Supporting Software Architecture Maintenance by Providing Task-specific Recommendations (Idea)
 >  
-背景： 開発者をサポートする情報はあっちこっちに分散されている場合が多い、アーキテクチャの文書も古くなっている可能性  
+背景： **開発者をサポートする情報はあっちこっちに分散されている場合が多い、アーキテクチャの文書も古くなっている可能性**  
 提案手法： ソフトウェアのメンテナンス中に発生する具体的な情報ニーズからリコメンドを提供する手法
 
 Tag_Human, Tag_Recommend, Tag_Dev  
@@ -818,7 +818,7 @@ ___
 
 - Title: A Validation Method of Self-Adaptive Strategy Based on POMDP (Idea)
 >  
-背景： Self-Adaptive Systems (SASs) は調整戦略によって変更の適用を動的に調整可能 → 戦略の効率性は動的要素に影響を受ける → 戦略を決定する前に検証をすべきだが、動的情報が限定的になるという仮定を無視している（正確に検証できていない）  
+背景： **Self-Adaptive Systems (SASs)** は調整戦略によって変更の適用を動的に調整可能 → 戦略の効率性は動的要素に影響を受ける → 戦略を決定する前に検証をすべきだが、動的情報が限定的になるという仮定を無視している（正確に検証できていない）  
 提案手法： 部分的に観測可能なマルコフ決定プロセスに基づいた戦略検証方法 → 限定的な情報から状態の記述をサポート、実行時に戦略が要件を満たしているかの検証方法、効果的な戦略を素早く得るための戦略修正方法
 
 Tag_SAS, Tag_Markov_Decision_Process, Tag_State_Machine  
@@ -840,7 +840,7 @@ ___
 
 - Title: Lib Metamorphosis: A Performance Analysis Framework for Exchanging Data Structures in Performance Sensitive Applications (Idea)
 >  
-背景： ソフトウェアがパフォーマンス要件を満たさない → コア部分のデータ構造を変更、変更の影響も監視 → 経済的コスト、進化の妨げ → 開発者は根本的な修正を忌避するようになる → データ構造のリファクタリングをサポートするツールが必要  
+背景： ソフトウェアがパフォーマンス要件を満たさない → **コア部分のデータ構造を変更、変更の影響も監視 → 経済的コスト、進化の妨げ → 開発者は根本的な修正を忌避するようになる** → データ構造のリファクタリングをサポートするツールが必要  
 提案手法： テストスイートを利用して正確性を維持、入れ替え前後のデータ構造のパフォーマンスを自動測定するツール  
 実装：  
 実験：
@@ -856,10 +856,15 @@ ___
 
 ## Testing (2 Researches, 1 Journal, 2 Shorts)
 
+<div class="waku">
+<details open>
+
+___
+
 - Title: An Empirical Study of the Relationship between Continuous Integration and Test Code Evolution (Research)
 >  
-背景： CIはコード統合の頻度を自動化する実践 → 広く利用されてきた → 早期のエラー特定に有用 → CIが新テスト手法の導入を阻害していないかは不明瞭  
-調査： CIを採用しているプロジェクトと非採用のプロジェクトをそれぞれ82個ずつ調査 → 全体で3936バージョンに対して、テストコード比率とカバレッジを調査 → CIプロジェクトのほうがテストコード比率が高くなる傾向（カバレッジの改善も見られる） → CIは健全なテストとその進化を後押ししている
+背景： CIはコード統合の頻度を自動化する実践 → 広く利用されてきた → 早期のエラー特定に有用 → **CIが新テスト手法の導入を阻害していないかは不明瞭**  
+調査： CIを採用しているプロジェクトと非採用のプロジェクトをそれぞれ82個ずつ調査 → 全体で3936バージョンに対して、テストコード比率とカバレッジを調査 → CIプロジェクトのほうがテストコード比率が高くなる傾向（カバレッジの改善も見られる） → **CIは健全なテストとその進化を後押ししている**
 
 Tag_CI, Tag_Dev, Tag_Survey, Tag_Test  
 Tag_S_Test
@@ -869,7 +874,7 @@ ___
 
 - Title: What Factors Make SQL Test Cases Understandable For Testers? A Human Study of Automatic Test Data Generation Techniques (Research)
 >  
-背景： RDBのテストに関して、テストケースの自動生成は色々研究されている → テスターがSQL関連のテストを理解してテストできているかは不明瞭   
+背景： RDBのテストに関して、テストケースの自動生成は色々研究されている → **テスターがSQL関連のテストを理解してテストできているかは不明瞭**   
 調査： RDBの自動生成されたテストについてのテスターの理解について調査 → 受理もしくは拒否されるINSERT文の生成器を採用 → INSERTのVALUEはテスターの理解に影響を与える（デフォルト値など）、負数とNULLなどの文字列はテスターの予測を妨げる（テストの結果が正しいか混乱する）
 
 Tag_SQL, Tag_Database, Tag_Test, Tag_Test_Case_Gen, Tag_Survey  
@@ -893,7 +898,7 @@ ___
 
 - Title: Systematically Testing and Diagnosing Responsiveness for Android Apps (Short)
 >  
-背景： アプリの応答性はユーザ視点でのパフォーマンス解釈の最たる例 → CPUの使用率以外にも、デバイスやハードウェアの構成が応答性に影響を与える可能性 → 構成に依存するバグの検出メカニズムはない  
+背景： アプリの応答性はユーザ視点でのパフォーマンス解釈の最たる例 → CPUの使用率以外にも、デバイスやハードウェアの構成が応答性に影響を与える可能性 → **構成に依存するバグの検出メカニズムはない**  
 提案手法： AppSPIN 応答性のバグを自動診断、構成依存のバグを体系的に調査 → アプリに対して計装を行う  
 実装：  
 実験： 30の実際のアプリで評価 → 123の応答性のバグを検出 → 87%について15分のテスト時間内に正常に診断
@@ -917,11 +922,19 @@ Tag_S_Test
 最初勘違いしたが、DLを用いたテストではなくて、DLをテストする手法。 今までそういったテストにBlackbox使われているとは知らなんだ（ホント？）
 ___
 
+</details>
+</div>
+
 ## Systems and Configurations (2 Researches, 1 Industry, 2 Shorts)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: An Exploratory Study of Logging Configuration Practice in Java (Research)
 >  
-背景： ロギングの構成はロギングの機能、パフォーマンス、信頼性に大きな影響 → ロギングの構成に焦点を当てた調査はない  
+背景： **ロギングの構成はロギングの機能、パフォーマンス、信頼性に大きな影響** → ロギングの構成に焦点を当てた調査はない  
 調査： 様々なサイズとドメインの10のJavaのOSSプロジェクトと10の産業プロジェクトのロギング構成の実践を調査 → ロギング構成の変更履歴（1213のリビジョン）を分類、分析 → 10個の知見 → 知見から検出器を開発、3つの2年以上未解決のIssueへ取り組み → 2件は解決
 
 Tag_Logging, Tag_Survey, Tag_Version  
@@ -937,7 +950,7 @@ ___
 実装：  
 実験： 4つの合成データセットと6つの実際のデータセットで評価 → 有効（vs 既存のパフォーマンス影響モデル）
 
-Tag_Learning, Tag_Lasso, Tag_Prediction  
+Tag_Learning, Tag_Lasso, Tag_Prediction, Tag_Cost  
 Tag_S_Configuration
 
 構成コストの推定、なんだが、これは構成可能な組み合わせの中で最適な組み合わせを抽出するものなのか？ よくわからんぬ
@@ -945,7 +958,7 @@ ___
 
 - Title: Microservices Migration in Industry: Intentions, Strategies, and Challenges (Industry)
 >  
-背景： 環境が移ろう中で、レガシーシステムをマイクロサービスアーキテクチャへ移行が発生 → 大規模な移行では影響と課題の慎重な検討が必要 → 業界内の実践経験がまとまっていない  
+背景： 環境が移ろう中で、レガシーシステムをマイクロサービスアーキテクチャへ移行が発生 → **大規模な移行では影響と課題の慎重な検討が必要 → 業界内の実践経験がまとまっていない**  
 調査： 10社のソフトウェア専門家に16回のインタビューを実施、様々なドメイン、サイズの14のシステムの移行プロセスを調査 → 移行では保守性とスケーラビリティが重視、コードベースの分割よりも現代風に書き換えが好まれる（適切な分割手法がないことも要因、技術的課題）
 
 Tag_Survey, Tag_Human, Tag_Practice  
@@ -954,7 +967,7 @@ Tag_S_Configuration
 移行時の経験・知見についての調査
 ___
 
-- Title: Comparing Constraints Mined From Execution Logs to Understand Software Evolution (Short)
+- Title: <font color="orange"> Comparing Constraints Mined From Execution Logs to Understand Software Evolution </font> (Short)
 >  
 背景： システム開発で、変更の影響を理解するのは大抵困難 → 変更の影響分析について多く提案されている  
 提案手法： **変更前と変更後の実行ログから実行時の制約を比較する手法** → マイニングされた制約を定期的なイベントの予想タイミングと順序、データ要素の値として定義 → 違いを提供することで影響分析をサポート  
@@ -978,11 +991,19 @@ Tag_S_Configuration
 ここでの実行時間の不一致は数時間とか数日とかの単位でいいのかね？ Juliaという言語は知らんかった
 ___
 
+</details>
+</div>
+
 ## Comprehension and Empirical Studies (3 Researches, 2 Shorts)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: Comprehending Test Code: An Empirical Study (Research)
 >  
-背景： 開発者のソースコード理解タスクについての調査はある → テストコード理解の方法についてはあまり調査されていない  
+背景： 開発者のソースコード理解タスクについての調査はある → **テストコード理解の方法についてはあまり調査されていない**  
 調査： Javaテストコードの理解方法について44人について調査 → テストスイートの読み取りに費やされた合計時間、テストスイートの目的の特定の仕方、テストスイートの拡張の仕方について調査 → 1)事前知識があると読み取り時間が短縮、2)Javaの経験値がAssertなどへの消費時間が短縮、1)2)両方を備えているとテストケース作成に好影響、自動テストの経験は自動テストスイートの理解と拡張に影響
 
 Tag_Human, Tag_Survey, Tag_Test, Tag_Test_Suite  
@@ -993,7 +1014,7 @@ ___
 
 - Title: An Empirical Study Assessing Source Code Readability in Comprehension (Research)
 >  
-背景： ソースコードの読み取りには時間がかかる → 読み取りやすいコードを書くのがベネ → ネストとループについて2つのコードの可読性ルールを評価  
+背景： ソースコードの読み取りには時間がかかる → **読み取りやすいコードを書くのがベネ → ネストとループについて2つのコードの可読性ルールを評価**  
 調査： 4つのカテゴリ（ルールに従うか否か、正しいか否か）、32のJavaメソッドをテスト → オンライン上で275名が実施 → ネストが最小限に抑えるとソースコードの読み取り理解の時間短縮、理解力の向上、do-whileは回避してもそこまで効果なし、英語知識が高いほどネストの最小化に影響
 
 Tag_Human, Tag_Code, Tag_Survey, Tag_Language  
@@ -1004,7 +1025,7 @@ ___
 
 - Title: Handling duplicates in Dockerfiles families: Learning from experts (Research)
 >  
-背景： Dockerfileの管理が単一ではなく複数の Dockerfiles (family) になってきている → 重複処理という（古典的な）課題が発生するのかは未調査  
+背景： **Dockerfileの管理が単一ではなく複数の Dockerfiles (family) になってきている** → 重複処理という（古典的な）課題が発生するのかは未調査  
 調査： 128のプロジェクトでの管理者を観察、25人に絞って調査 → 重複は頻繁に発生し、それに対してどうするかは意見が分かれる → 一部の管理者がその場のツールを使用 → 最大85%重複を削除する可能
 
 Tag_Human, Tag_Docker, Tag_Survey  
@@ -1013,9 +1034,9 @@ Tag_S_Comprehension, Tag_S_Human
 解読に時間がかかったが、Dockerfile間の重複（冗長）があるのか、あった場合どうするのかについての調査。 Dockerもどこかで習いたいなぁ
 ___
 
-- Title: Share, But Be Aware: Security Smells in Python Gists (Short)
+- Title: <font color="orange"> Share, But Be Aware: Security Smells in Python Gists </font> (Short)
 >  
-背景： GitHub Gist上にハードコードされたパスワードなど（Security Smells）を乗せてしまうことがある（危ない） → 脆弱性へ繋がる  
+背景： **GitHub Gist上にハードコードされたパスワードなど（Security Smells）を乗せてしまうことがある（危ない） → 脆弱性へ繋がる**  
 調査： 公開済みの Security Smells 関係の研究を用いて、Gist上のにおいを調査 → 静的分析を通じて13の Security Smells を発見、4403/5822 の公開済み Python Gists で発生が確認 → 1817/5822 で機密性の高いインスタンスを含むコードあり
 
 Tag_Github, Tag_Security, Tag_Survey, Tag_Code_Smell  
@@ -1026,7 +1047,7 @@ ___
 
 - Title: Can Automated Impact Analysis Techniques Help Predict Decaying Modules? (Short)
 >  
-背景： Decaying Modules → 将来的ににおいを発する可能性があるモジュール → 潜在的なにおい → においの予測という観点の手法が提案されてきている → 開発者の変更モジュールの情報（開発者のコンテキスト）が予測パフォーマンスの改善に役立つが、その情報の取得にはコストがかかる  
+背景： **Decaying Modules → 将来的ににおいを発する可能性があるモジュール → 潜在的なにおい** → においの予測という観点の手法が提案されてきている → 開発者の変更モジュールの情報（開発者のコンテキスト）が予測パフォーマンスの改善に役立つが、その情報の取得にはコストがかかる  
 提案手法： 自動影響分析を用いて、開発者のコンテキストの自動推定の方法を模索  
 実装：  
 実験： 影響分析の精度とDecaying Modulesの予測精度との相関関係を調査
@@ -1037,11 +1058,19 @@ Tag_S_Comprehension, Tag_S_Human
 林先生じゃんか。 においを放つかどうかを予測する、という文脈で自動影響解析が使えないか（情報が使えるのは分かっているので）、という趣旨の論文。
 ___
 
+</details>
+</div>
+
 ## Architecture (3 Researches, 1 Industry)
+
+<div class="waku">
+<details open>
+
+___
 
 - Title: Assuring the Evolvability of Microservices: Insights into Industry Practices and Challenges (Research)
 >  
-背景： マイクロサービスはソフトウェアの進化について好影響（技術的負債の処理など）があるが、どの行動がそれを促しているのかは不透明 → Evolvability を保証するプロセスなどを調査  
+背景： **マイクロサービス** はソフトウェアの進化について好影響（技術的負債の処理など）があるが、**どの行動がそれを促しているのかは不透明 → Evolvability を保証するプロセスなどを調査**  
 調査： 10社のソフトウェア専門家と14のマイクロサービスについて17回の半構造化された面接を実施 → Evolvability をどのように確保したかを議論 → 外部顧客向けシステムでは保証が中央ガバナンスに依存、アーキテクチャの原則が重要、自動化のツールとサポートが重要。 報告される問題のほとんどが Architectural Technical Debt (ATD) に関連 → それに対して指向したツールとメトリクスを使用していない
 
 Tag_Evolvability, Tag_Survey, Tag_Technical_Debt, Tag_Microservice  
@@ -1052,7 +1081,7 @@ ___
 
 - Title: Investigating instability architectural smells evolution: an exploratory case study (Research)
 >  
-背景： Architectural Smells はメンテコストを増大させる可能性（潜在的なリファクタリングに注意する必要性） → 開発者たちは直観で知っているが、具体的に体系化されていない  
+背景： **Architectural Smells はメンテコストを増大させる可能性（潜在的なリファクタリングに注意する必要性）** → 開発者たちは直観で知っているが、具体的に体系化されていない  
 調査： 時間経過と Architectural Smell のインスタンスの進化、インスタンスを定義する特性との相関を調査 → Smell は3タイプに分類、14のプロジェクトから524バージョンからマイニング → 各匂いの影響をめっちゃ受ける
 
 Tag_Code_Smell, Tag_Survey, Tag_Architecture, Tag_Version  
@@ -1063,7 +1092,7 @@ ___
 
 - Title: A Qualitative Study on Framework Debugging (Research)
 >  
-背景： フレームワークの機能については、シーケンシャルプログラムに比べてプログラミング、デバッグの戦略をより調整しないといけない → が、フレームワークのデバッグの利点と課題は未整理  
+背景： フレームワークの機能については、シーケンシャルプログラムに比べてプログラミング、**デバッグの戦略をより調整しないといけない → が、フレームワークのデバッグの利点と課題は未整理**  
 調査： フレームワークAPIを用いたアプリの開発者について2つ(Android Fragment class, ROS Framework)の人間的調査を実施 → 一般的な問題への作成済みの解法が役立つ、フレームワークが何を抽象化しているのかを理解するのが難しい → フレームワークのデバッグ固有の問題がある
 
 Tag_API, Tag_Framework, Tag_Survey, Tag_Debug  
@@ -1074,7 +1103,7 @@ ___
 
 - Title: Adoption, Support, and Challenges of Infrastructure-as-Code: Insights from Industry (Industry)
 >  
-背景： IaCは機械的に読み取り可能な定義ファイルを使ってインフラを管理する戦略 → エンジニアリング技術として関心が高い  
+背景： **IaCは機械的に読み取り可能な定義ファイルを使ってインフラを管理する戦略** → エンジニアリング技術として関心が高い  
 調査： 多数の企業の上級開発者への44の半構造化面接を実施 → IaCの採用における実践の現状、SEの課題を整理 → IaCの採用・開発手法、現在利用可能なサポートツールの利点欠点、IaCを扱う開発者のニーズ
 
 Tag_IaC, Tag_Dev, Tag_Human, Tag_Survey  
@@ -1082,5 +1111,8 @@ Tag_S_Architecture
 
 IaC三度。 この記述だとIaCはXMLとかの設定ファイルのことを指している…？ 前の論文で出てきたのはIaCスクリプトだかた少し毛色が違う感はあるが。
 ___
+
+</details>
+</div>
 
 Tag_SurveyとTag_Practiceをしっかり分けたほうがいい感（現状だと何でもかんでもSurveyになってまう）
