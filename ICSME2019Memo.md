@@ -6,7 +6,133 @@
 }
 </style>
 
-# 7/6 (* absts)
+# Tags
+<details open>
+
+|tag  | num of  |
+|---- |----     |
+|Tag_Research | 36 |
+|Tag_Learning | 24 |
+|Tag_Human | 15 |
+|Tag_Dev | 13 |
+|Tag_Code | 9 |
+|Tag_Debug | 9 |
+|Tag_Test | 8 |
+|Tag_Practice | 7 |
+|Tag_Version | 7 |
+|Tag_Cost | 6 |
+|Tag_Natural | 6 |
+|Tag_Prediction | 6 |
+|Tag_Metrix | 5 |
+|Tag_Review | 5 |
+|Tag_API | 4 |
+|Tag_Automation | 4 |
+|Tag_Evolvability | 4 |
+|Tag_Github | 4 |
+|Tag_Hardware | 4 |
+|Tag_Security | 4 |
+|Tag_StackOverflow | 4 |
+|Tag_Survey | 4 |
+|Tag_Categorization | 3 |
+|Tag_CI | 3 |
+|Tag_Co_Evolve | 3 |
+|Tag_Code_Smell | 3 |
+|Tag_Design_Pattern | 3 |
+|Tag_Diff | 3 |
+|Tag_Priority | 3 |
+|Tag_Recommend | 3 |
+|Tag_Technical_Debt | 3 |
+|Tag_Android | 2 |
+|Tag_Clone | 2 |
+|Tag_Database | 2 |
+|Tag_Document | 2 |
+|Tag_Efficiency | 2 |
+|Tag_Graph | 2 |
+|Tag_IaC | 2 |
+|Tag_Logging | 2 |
+|Tag_Mobile | 2 |
+|Tag_Modeling | 2 |
+|Tag_Release | 2 |
+|Tag_Slice | 2 |
+|Tag_State_Machine | 2 |
+|Tag_Static_Analysis | 2 |
+|Tag_Statistical | 2 |
+|Tag_Test_Case_Gen | 2 |
+|Tag_Traceability | 2 |
+|Tag_Triaging | 2 |
+|Tag_Visualization | 2 |
+|Tag_Accessibility | 1 |
+|Tag_Architecture | 1 |
+|Tag_Assert | 1 |
+|Tag_Code_Fix | 1 |
+|Tag_CPDP | 1 |
+|Tag_Crowed_Sourcing | 1 |
+|Tag_Data_Structure | 1 |
+|Tag_Defect4 |J | 1 |
+|Tag_Docker | 1 |
+|Tag_Framework | 1 |
+|Tag_Fuzz | 1 |
+|Tag_Google | 1 |
+|Tag_Implementation | 1 |
+|Tag_Invariant | 1 |
+|Tag_Inferring | 1 |
+|Tag_iOS | 1 |
+|Tag_Julia | 1 |
+|Tag_Knowledge | 1 |
+|Tag_Language | 1 |
+|Tag_Lasso | 1 |
+|Tag_Library | 1 |
+|Tag_Limited_Data | 1 |
+|Tag_Linux | 1 |
+|Tag_Live_Programming | 1 |
+|Tag_Localization | 1 |
+|Tag_Markov_Decision_Process | 1 |
+|Tag_Merge | 1 |
+|Tag_MR | 1 |
+|Tag_Mutant | 1 |
+|Tag_Microservice | 1 |
+|Tag_Nation | 1 |
+|Tag_Patch | 1 |
+|Tag_Philosophy | 1 |
+|Tag_Presentation | 1 |
+|Tag_Refactoring | 1 |
+|Tag_Regression | 1 |
+|Tag_Resource | 1 |
+|Tag_Response | 1 |
+|Tag_Restructure | 1 |
+|Tag_SAS | 1 |
+|Tag_Semantics | 1 |
+|Tag_Service | 1 |
+|Tag_SQL | 1 |
+|Tag_SymExe | 1 |
+|Tag_Sync | 1 |
+|Tag_Syntax | 1 |
+|Tag_Teaching | 1 |
+|Tag_Test_Suite | 1 |
+|Tag_Travis_CI | 1 |
+|Tag_UFF | 1 |
+|Tag_UI | 1 |
+|----|----|
+|Tag_S_Debug | 9 |
+|Tag_S_Mobile | 5 |
+|Tag_S_Learning | 5 |
+|Tag_S_Refactoring | 5 |
+|Tag_S_Change | 5 |
+|Tag_S_Test | 10 |
+|Tag_S_Analysis | 6 |
+|Tag_S_Studies | 6 |
+|Tag_S_Code | 11 |
+|Tag_S_Repair | 6 |
+|Tag_S_API | 5 |
+|Tag_S_Dev | 5 |
+|Tag_S_Perspective | 5 |
+|Tag_S_Late_Breaking_Ideas | 5 |
+|Tag_S_Configuration | 5 |
+|Tag_S_Comprehension | 5 |
+|Tag_S_Human | 5 |
+|Tag_S_Architecture | 4 |
+
+</details>
 
 ## Bugs I (2 Researches, 2 Journals, 1 Short)
 
@@ -20,7 +146,7 @@ ___
 背景： Eclipseのような大規模OSSは定期的なリリースを行う → 各リリースでバグが報告され、解析・修正 → 既存研究はそのバグ修正などに焦点 → **各リリース間の修正アクティビティそのものを比較**（つまり、リリースAとリリースBのバグ修正のどこに差があり、どのような影響があるのか）する研究はない  
 調査： Eclipseの15年分のバグ処理プロセス（138Kのバグレポートや年間16+4*2のリリースも含）を調査 → バグの解決率、修正率、 Release Pressure の影響を調査 → 後期ほど修正率などが改善
 
-Tag_CI, Tag_Survey, Tag_Release, Tag_Version  
+Tag_CI, Tag_Research, Tag_Release, Tag_Version  
 Tag_S_Debug
 
 継続開発におけるバグ対応の変遷についての調査、ということでいいのだろうか。結論としてはプロジェクト発足当時よりも年数経った時分のほうが優れている（成熟している）とのこと。
@@ -33,7 +159,7 @@ ___
 提案手法： 切り替え前後のデータを比較する新規メトリクス → Regression on Discontinuity を用いた分析  
 結果： 主要な開発者自身からバグ報告が増加、開発者のコメント増加、外部から意見を出す人も増加
 
-Tag_Regression, Tag_Github, Tag_Debug, Tag_Dev  
+Tag_Regression, Tag_Github, Tag_Debug, Tag_Dev, Tag_Research  
 Tag_S_Debug
 
 結論としては、GitHubに切り替えたらバグレポートが活発化したということでいいのか？（だとするとただのGitHub賛美になるだけ） ○○みたいなプロジェクトは××のバグトラッカーが適している（根拠が提案するメトリクス）、みたいなら筋書きは分かるんだが…
@@ -70,7 +196,7 @@ ___
 背景： **Statistical Fault Localization (SFL)** はテストから得られたカバレッジ情報と統計メトリクスを使用して障害発生位置を推量 → 統計的メトリクスの有効性とテストスイートの失敗率の関連性は不明のまま  
 調査： Defects4Jを調査 → テストスイートの失敗率が低いとSFLのパフォーマンスが低下（失敗データが少なくて学習が不十分になるから？） → 各統計メトリクスの精度を調査 → 精度が上昇するとSFLのパフォーマンスが上昇
 
-Tag_Learning, Tag_Localization, Tag_Defect4J, Tag_Statistical  
+Tag_Learning, Tag_Localization, Tag_Defect4J, Tag_Statistical, Tag_Research  
 Tag_S_Debug
 
 メトリクスの評価をしてみた、という位置づけでおｋ？ 失敗率が低いと精度が下がるというジレンマっぽい何かを感じる。
@@ -91,7 +217,7 @@ ___
 背景： モバイルアプリにおいてエネルギー効率も重要な品質要件 → が、効率の改善は簡単ではない  
 調査： **エネルギー効率を改善するための変更とその影響を調査** → 539のエネルギー効率関連のコミットについて Better Code Hub (BCH) を用いて保守性の変化を測定 → エネルギー効率向上の変更によって保守性が低下する（特に省電力モードとウェイクロック追加のエネルギーパターン関連のコード変更で顕著）
 
-Tag_Efficiency, Tag_Hardware, Tag_Survey, Tag_Android  
+Tag_Efficiency, Tag_Hardware, Tag_Research, Tag_Android  
 Tag_S_Mobile
 
 モバイルアプリを開発したことないからあまりピンときていないけど、大抵はCPUの使用率を下げる（実行命令数を少なくする）ように実装するとエネルギー消費が低下するのか？ もちろんハードウェアの機能毎に消費量が違うから重み付けはしないといけないけど
@@ -102,7 +228,7 @@ ___
 背景： ユニバーサルデザイン（様々なステータスの利用者を想定する）はアクセシビリティの向上を目的とする → **アプリケーション開発者はアクセシビリティのサポートをどれだけ利用しているのかは不明瞭**  
 調査： マイニングベースのパイロット調査を実施 → 開発者はアクセシビリティAPIをほとんど使用していない ＆ APIを補助する説明文の利用は限定的。 StackOverFlowでの投稿を調査 → 開発者視点の整理 → アクセシビリティの困難さ/理解不足を開発者は経験
 
-Tag_Accessibility, Tag_Design_Pattern, Tag_StackOverflow, Tag_Survey  
+Tag_Accessibility, Tag_Design_Pattern, Tag_StackOverflow, Tag_Research  
 Tag_S_Mobile
 
 アクセシビリティはアプリケーションだけじゃなくデバイスやら複合的な要素が絡むので難易度は高そう（というかそれこそデバイスが千差万別な以上、アプリ開発側は一般的なユーザしか想定しないのでは？）
@@ -135,7 +261,7 @@ ___
 背景： モバイルアプリのレビューに関する研究では、ユーザレビューには豊富な情報が含まれている、とのことだった → **でもそれはアメリカ国内のレビューでしょ？他の国は？**  
 調査： App Store のダウンロードトップ15のアプリ（2018年）の5か月間、9か国の英語圏の諸国からの300643のレビューを取得 → 3358件のレビューを手動で分類 → アメリカ国内での評価とは矛盾する要因アリ
 
-Tag_Review, Tag_Survey, Tag_iOS, Tag_Nation  
+Tag_Review, Tag_Research, Tag_iOS, Tag_Nation  
 Tag_S_Mobile
 
 レビューはお国柄が出るのは同意（App Storeの日本のレビューってレビューじゃないよな）
@@ -170,7 +296,7 @@ ___
 紹介： **リリース前に見つかるバグとリリース後に見つかるバグの特徴と違いについての産業的な研究** を紹介 → 37の産業プロジェクトを分析、リリース前とリリース後に見つかるバグの違いを明文化  
 調査結果： リリース後のバグの修正のほうが難度が高そう、複数の言語で記述されたソースコードや構成ファイルの更新も必要になる → リリース後のバグの約82%についてコードの追加が必要
 
-Tag_Release, Tag_Debug, Tag_Survey  
+Tag_Release, Tag_Debug, Tag_Research  
 Tag_S_Debug
 
 ある意味リリースを重ねるに連れてバグ修正に手慣れる（もしくはバグが発生しにくいコーディングを実践できるようになる）のだろうとは思う。
@@ -181,7 +307,7 @@ ___
 背景： GitやSVNなどのバージョン管理システムはバグ追跡メカニズムが存在 → 開発者はバグレポートからバグを認知可能  → **トリアージ（分類）補助の研究は色々あるが、報告されたバグの分類を理解を補助する手法の研究は少ない**  
 調査： 1) Mozilla, Apache, Eclipse などに属する119のプロジェクトの1280のバグレポートを分析 2) 自動分類モデルを考案、評価 → システム全体のバグ原因を9つに分類、モデルは高いF値 64%を達成
 
-Tag_Triaging, Tag_Debug, Tag_Review, Tag_Modeling  
+Tag_Triaging, Tag_Debug, Tag_Review, Tag_Modeling, Tag_Research  
 Tag_S_Debug
 
 ？最終的にはトリアージしてない？（読み間違えたかな…） 人間視点でもわかりやすい分類方法を考案したということなんだろうか（原因別の分類）
@@ -304,7 +430,7 @@ ___
 背景： **不適切なコードクローン（コードのコピペ）はバグを誘発するという考えがある** → が、詳しく調査はされていない（バグが発生したコード内にコードクローンがあるかの研究はある）  
 調査： コードクローン由来のバグ（コンテキスト適応バグ、コンテキストバグ） を2つのパターンを定義して分析 → Java, C, C# で記述された6つのOSSプロジェクトで調査 → 結構バグあるぞよ → クローン関連のバグ修正は50%がコンテキストバグの修正の可能性（特に異なるリビジョン、ファイル間のクローンでは確率が上昇する傾向）
 
-Tag_Code, Tag_Clone, Tag_Debug, Tag_Survey  
+Tag_Code, Tag_Clone, Tag_Debug, Tag_Research  
 Tag_S_Refactoring
 
 ワシもよくコードはコピペしますねぇ（プロジェクト内からもWebからも）。 先輩の研究ではやはりこの手の研究は実装に時間がかかる模様
@@ -342,7 +468,7 @@ ___
 背景： 技術的負債は適切な解決策を欠如させる可能性がある → Self-Admitted Technical Debt (SATD) コメントやコミットメッセージによる導入（Admittance）  
 調査： **リファクタリングとSATD削除の関係性を調査** → 4つのOSSプロジェクトでSATDとその削除をデータセットとして利用 → 自動リファクタリング検出ツールとともに関係性を調査 → リファクタリングとSATDの削除には相関がありそう
 
-Tag_Dev, Tag_Learning, Tag_Cost, Tag_Technical_Debt, Tag_Survey  
+Tag_Dev, Tag_Learning, Tag_Cost, Tag_Technical_Debt, Tag_Research  
 Tag_S_Refactoring
 
 結局SATDが何なのか分らぬ…（Admittanceの適当な訳が分からん）。 あくまでリファクタリングとの因果関係までは調査していない模様なので、過信しすぎないよう
@@ -389,7 +515,7 @@ ___
 背景： すべてのコード変更がマージされるわけではない → **マージされない変更は破棄や再送信が発生するので、コストが嵩む（あるいは無駄が発生する）ことになる**  
 調査： 4つのOSSプロジェクト（ Eclipse, LibreOffice, OpenStack, Qt ）で変更破棄の理由を調査 → 1459の破棄された変更を手動で分析、ラベル付け、12のカテゴリに分類 → 分布を調査 → 破棄変更の大半は冗長な変更（すでに変更済み）、12のカテゴリの分布は4つのプロジェクトで類似、破棄される場合、1年以内に98.39%が破棄
 
-Tag_Version, Tag_Survey, Tag_Merge, Tag_Categorization  
+Tag_Version, Tag_Research, Tag_Merge, Tag_Categorization  
 Tag_S_Change
 
 破棄理由のサーベイ、バージョン管理系の研究をするなら面白そうかも
@@ -413,7 +539,7 @@ ___
 背景： コードの変更はモバイルプラットフォームか否かで方法が異なる → **プラットフォームの違いがコード変更の進化 (evolve) にどう影響するかは未調査**  
 調査： 変更頻度、ソースコード、ビルド、テストの変更がモバイル/非モバイルでどのように共進化するのかを調査 → 非モバイルでは1月あたりのコミット数が多い、モバイルでは混乱要素を制御する場合にはコミット数が極端に減る
 
-Tag_Code, Tag_Mobile, Tag_Survey, Tag_Co_Evolve, Tag_Evolvability  
+Tag_Code, Tag_Mobile, Tag_Research, Tag_Co_Evolve, Tag_Evolvability  
 Tag_S_Change
 
 共進化(Co-Evolution/Co-Evolve)再び。 うーむ。 Abst読む限りだと、コミット数にしか変化がなかったように見えちゃう
@@ -434,7 +560,7 @@ ___
 背景： **ソフトウェアテストでは開発者の経験が活きる（経験が活かされる有望株がテスト）**  
 調査： 開発チームの経験とアサーション密度（テストクラスのKLOCあたりのアサーション数）との相関を調査 → チームの経験などを12のソフトウェアプロジェクトのテストクラスのアサーション密度と関連付けるモデルを構築 → 57人の開発者への調査と統計モデルを比較 → 関係ありという結果
 
-Tag_Human, Tag_Test, Tag_Assert, Tag_Survey  
+Tag_Human, Tag_Test, Tag_Assert, Tag_Research  
 Tag_S_Test
 
 なぜアサーション密度？ 経験が多いほうがアサーション密度が高い？低い？ Abstだけでは結果や相関が読み取れず
@@ -520,7 +646,7 @@ ___
 背景： **略語の展開は開発者の理解を深める → 略語が展開できないと、開発者はコード理解により多くの時間を消費する（もったいない）** → 一般的な手法では精度が60%程度行けばいいほう  
 調査： 略語とその略語がどこで発生するのかを調査 → 5つのOSSシステムから抽出された略語と展開のペアから、特性を明確にする → 特性から現在の手法を比較・評価
 
-Tag_Natural, Tag_Dev, Tag_Human, Tag_Survey  
+Tag_Natural, Tag_Dev, Tag_Human, Tag_Research  
 Tag_S_Analysis, Tag_S_Studies
 
 略語が何を指しているのかわからないこと、ありますあります。 そういう意味では面白い研究（すでに数件citation付いてた）。
@@ -531,7 +657,7 @@ ___
 背景： ソフトウェアメンテナンスにおいて、問題の改善と詳細化は重要 → 重要度、担当者、解決への推定コストなどの追加情報も必要  
 調査： **クラウドワーカーを利用している場合の推定コスト** をプランニングポーカーを用いて見積もるための調査　→ 見積もりの利点の整理
 
-Tag_Human, Tag_Dev, Tag_Survey, Tag_Crowed_Sourcing, Tag_Cost
+Tag_Human, Tag_Dev, Tag_Research, Tag_Crowed_Sourcing, Tag_Cost
 Tag_S_Analysis, Tag_S_Studies
 
 Crowed Worker: クラウドソーシング（一般大衆の知見を利用して問題解決にあたる手法、不特定多数に外注する手法、誰かが解決してくれるだろうという期待）、 Planning Poker: マイクロソフトが出している（？）タスク見積もりのカード（ラフな感じ）  
@@ -543,7 +669,7 @@ ___
 背景： GitHubなどでは、開発者に順守してほしい投稿ガイドラインを設定している → **実際にどれだけガイドラインが遵守されているかを体系的に調べられていない**  
 調査： 53のGitHubプロジェクトについて調査 → プロセスモデルを作成、実際のアクティビティとガイドラインとを比較 → 訳68%が予想されるプロセスと大きく異なる（遵守していない）
 
-Tag_Github, Tag_Human, Tag_Dev, Tag_Survey  
+Tag_Github, Tag_Human, Tag_Dev, Tag_Research  
 Tag_S_Analysis, Tag_S_Studies
 
 確かにワシGitHubのガイドライン読んでないなぁ
@@ -554,7 +680,7 @@ ___
 背景： Travis CI → GitHubと提携しているCI支援のためのプラットフォーム  
 調査： **Travis CI のユーザや利用開始の基準、構成を変更する頻度などを調査** → 利用者にはMicrosoftもいた、Travis上で最も人気の高いPythonはGitHubでは3番目、レポジトリセットアップから平均7日でTravisがセットアップ、Travis内のジョブの60%がテスト
 
-Tag_Github, Tag_CI, Tag_Survey, Tag_Travis_CI  
+Tag_Github, Tag_CI, Tag_Research, Tag_Travis_CI  
 Tag_S_Analysis, Tag_S_Studies
 
 Travis CI はテスト環境などをTravisサーバ上で構成できるので、環境構築が簡単に。 そうか、Pythonが3番目まで来ちゃったか、という印象
@@ -565,7 +691,7 @@ ___
 背景： コード辞書 (code lexicon) は自然言語と同様に進化論の範疇にある（？）   
 調査： **OSSのコード辞書の進化を統計的に分析** → 2000のOSSで調査 → 時間経過とともに言語的アイデンティティが大幅に変化する、コード辞書の構文構造が異なれば進化方法も異なる、メンテナンスアクティビティがコード辞書へ影響を与える
 
-Tag_Survey, Tag_Co_Evolve, Tag_Natural, Tag_Code, Tag_Evolvability, Tag_Statistical  
+Tag_Research, Tag_Co_Evolve, Tag_Natural, Tag_Code, Tag_Evolvability, Tag_Statistical  
 Tag_S_Analysis, Tag_S_Studies
 
 コード辞書が何なのか調べてもピンと来ない（レシピブックみたいなもん？） そして度々出てくる進化のキーワード
@@ -672,7 +798,7 @@ ___
 背景： コンピュータービジョンといったMLの応用先は、アクセシビリティとシンプルさが魅力的 → 複数のベンダがこれらの技術を提供 → **メンテナンスと進化のリスクについての調査はない**（特に動作の一貫性と機能の透明性）  
 調査： 3つの異なるデータセットを使用して11か月の間3つのサービスについてのアウトプットを評価 → サービス動作に一貫性がない、アウトプットの進化リスクが存在、リスク・不整合を文書化する明確なコミュニケーションが存在しない
 
-Tag_Learning, Tag_Survey, Tag_Service  
+Tag_Learning, Tag_Research, Tag_Service  
 Tag_S_API, Tag_S_Code, Tag_S_Dev
 
 Computer Vision: コンピュータが画像や動画をいかによく理解できるか、を扱う研究分野  
@@ -684,7 +810,7 @@ ___
 背景： **ライブプログラミングは複数の言語で利用されつつある → 現実的なシナリオや複雑なAPIを使用した場合の利点について未調査**  
 調査： 機械的な動作を State Machine に落とし込み、ライブプログラミングの利点を分析 → プログラムの理解と作成を分析 → Robotic Behavior のコンテキストでは、プログラムの理解や速度・正確性の…で非ライブ言語を大幅に上回らない（大差ない）
 
-Tag_Live_Programming, Tag_Survey, Tag_State_Machine  
+Tag_Live_Programming, Tag_Research, Tag_State_Machine  
 Tag_S_API, Tag_S_Code, Tag_S_Dev
 
 ここでの Robotic Behavior がロボット工学的な意味合いなのか判別できなかった（英語力ェ…） ライブプログラミングは見てる人の属人化が起きちゃう気がして、そんな頻繁には利用できないイメージ
@@ -694,7 +820,7 @@ Tag_S_API, Tag_S_Code, Tag_S_Dev
 背景： 継続開発の文脈で、IaC (Infrastructure-as-Code) の欠陥は開発の自動化やパイプラインの信頼性を損ねる可能性 → **ハードコードされた文字列などのプロパティが、IaCの欠陥と相関がある** のではと仮定  
 調査： OSSレポジトリからマイニングされた欠陥関連のコミットに定性分析を適用 → 欠陥のあるIaCと相関のあるプロパティを特定 → 4つのデータセットから2439のスクリプトとそのプロパティを使用して欠陥予測モデルも構築 → 10個の欠陥関連のプロパティを識別 → 欠陥IaCとの相関が認められる
 
-Tag_Learning, Tag_IaC, Tag_Prediction, Tag_Survey  
+Tag_Learning, Tag_IaC, Tag_Prediction, Tag_Research  
 Tag_S_API, Tag_S_Code, Tag_S_Dev
 
 IaC再び。 ハードコードされると保守性が悪くなる、のか？
@@ -705,7 +831,7 @@ ___
 背景： APIの学習にドキュメントが利用されるが、そのドキュメントが信頼できない可能性もある  
 調査： **使用例と出力例からOpenAPIの仕様を抽出し、Web APIドキュメントと比較、不適切なドキュメントの特性を調査** → エンドポイントの約65.5%に不適切な使用例が存在 → 4つのカテゴリに分類（ドキュメント化されていない、動的な不一致、リターンしないパターン、型の不一致）
 
-Tag_Learning, Tag_API, Tag_Document, Tag_Survey, Tag_Categorization  
+Tag_Learning, Tag_API, Tag_Document, Tag_Research, Tag_Categorization  
 Tag_S_API, Tag_S_Code, Tag_S_Dev
 
 鷲崎先生の論文。 ドキュメント内の矛盾を識別する調査？
@@ -716,7 +842,7 @@ ___
 背景： **生体認証技術は非常に関心が強くなってきている → が、そのAPIについて使用方法を説明している文書は十分ではない** → 利用する開発者の負担大（頻繁にAPIが更新されることも一因）  
 調査： Stack Overflow, Neurotechnology などのオンラインメディアから生体認証API関連の投稿500件を手動で分析 → 発生問題のほとんどで正確なドキュメントが欠如が原因、生体認証APIの非互換性が複数の実装環境でまたがっている
 
-Tag_API, Tag_Document, Tag_StackOverflow, Tag_Survey  
+Tag_API, Tag_Document, Tag_StackOverflow, Tag_Research  
 Tag_S_API, Tag_S_Code, Tag_S_Dev
 
 生体認証はデバイスも絡んでくるから通常の開発とは経路が違う。 結局はAPIのガイドラインやドキュメントが不十分だぞ、ということを言いたい？
@@ -866,7 +992,7 @@ ___
 背景： CIはコード統合の頻度を自動化する実践 → 広く利用されてきた → 早期のエラー特定に有用 → **CIが新テスト手法の導入を阻害していないかは不明瞭**  
 調査： CIを採用しているプロジェクトと非採用のプロジェクトをそれぞれ82個ずつ調査 → 全体で3936バージョンに対して、テストコード比率とカバレッジを調査 → CIプロジェクトのほうがテストコード比率が高くなる傾向（カバレッジの改善も見られる） → **CIは健全なテストとその進化を後押ししている**
 
-Tag_CI, Tag_Dev, Tag_Survey, Tag_Test  
+Tag_CI, Tag_Dev, Tag_Research, Tag_Test  
 Tag_S_Test
 
 ここまでCIを賛美する論文は中々なさそう（CIと非CIの比較にどれだけの意味があるのかは不明として）？ 82個ずつのプロジェクトが対をなしているなら説得力は高いけどもどうだろ
@@ -877,7 +1003,7 @@ ___
 背景： RDBのテストに関して、テストケースの自動生成は色々研究されている → **テスターがSQL関連のテストを理解してテストできているかは不明瞭**   
 調査： RDBの自動生成されたテストについてのテスターの理解について調査 → 受理もしくは拒否されるINSERT文の生成器を採用 → INSERTのVALUEはテスターの理解に影響を与える（デフォルト値など）、負数とNULLなどの文字列はテスターの予測を妨げる（テストの結果が正しいか混乱する）
 
-Tag_SQL, Tag_Database, Tag_Test, Tag_Test_Case_Gen, Tag_Survey  
+Tag_SQL, Tag_Database, Tag_Test, Tag_Test_Case_Gen, Tag_Research  
 Tag_S_Test
 
 ここでのテストケース自動生成はSQL構文が崩れないようにひな形を作っている、ぐらいの感じ？ 記号実行とかではめんどくさい要素やし
@@ -937,7 +1063,7 @@ ___
 背景： **ロギングの構成はロギングの機能、パフォーマンス、信頼性に大きな影響** → ロギングの構成に焦点を当てた調査はない  
 調査： 様々なサイズとドメインの10のJavaのOSSプロジェクトと10の産業プロジェクトのロギング構成の実践を調査 → ロギング構成の変更履歴（1213のリビジョン）を分類、分析 → 10個の知見 → 知見から検出器を開発、3つの2年以上未解決のIssueへ取り組み → 2件は解決
 
-Tag_Logging, Tag_Survey, Tag_Version  
+Tag_Logging, Tag_Research, Tag_Version  
 Tag_S_Configuration
 
 ここでのログ構成はコーディングのことなのかコンポーネントの構成なのか（多分前者）。 ログ方面に舵を切るなら気になるかも
@@ -961,7 +1087,7 @@ ___
 背景： 環境が移ろう中で、レガシーシステムをマイクロサービスアーキテクチャへ移行が発生 → **大規模な移行では影響と課題の慎重な検討が必要 → 業界内の実践経験がまとまっていない**  
 調査： 10社のソフトウェア専門家に16回のインタビューを実施、様々なドメイン、サイズの14のシステムの移行プロセスを調査 → 移行では保守性とスケーラビリティが重視、コードベースの分割よりも現代風に書き換えが好まれる（適切な分割手法がないことも要因、技術的課題）
 
-Tag_Survey, Tag_Human, Tag_Practice  
+Tag_Research, Tag_Human, Tag_Practice  
 Tag_S_Configuration
 
 移行時の経験・知見についての調査
@@ -985,7 +1111,7 @@ ___
 背景： 科学ソフトウェア（データ分析を用いて知見を得るソフトウェア） → 開発にはJuliaという言語が使われることがあるが、**実行時間の見積もりができないのでタスクが効率的に完了できない**  
 調査： StackOverflowの投稿から実行時間の不一致（想定と違う）についての原因の特定を試みる → 263のJulia関連の投稿について定性分析 → 9つのカテゴリに分類、10個の原因を特定（配列内包の表記で不必要なメモリ割り当てが発生した場合など）
 
-Tag_Julia, Tag_Learning, Tag_StackOverflow, Tag_Survey, Tag_Categorization  
+Tag_Julia, Tag_Learning, Tag_StackOverflow, Tag_Research, Tag_Categorization  
 Tag_S_Configuration
 
 ここでの実行時間の不一致は数時間とか数日とかの単位でいいのかね？ Juliaという言語は知らんかった
@@ -1006,7 +1132,7 @@ ___
 背景： 開発者のソースコード理解タスクについての調査はある → **テストコード理解の方法についてはあまり調査されていない**  
 調査： Javaテストコードの理解方法について44人について調査 → テストスイートの読み取りに費やされた合計時間、テストスイートの目的の特定の仕方、テストスイートの拡張の仕方について調査 → 1)事前知識があると読み取り時間が短縮、2)Javaの経験値がAssertなどへの消費時間が短縮、1)2)両方を備えているとテストケース作成に好影響、自動テストの経験は自動テストスイートの理解と拡張に影響
 
-Tag_Human, Tag_Survey, Tag_Test, Tag_Test_Suite  
+Tag_Human, Tag_Research, Tag_Test, Tag_Test_Suite  
 Tag_S_Comprehension, Tag_S_Human
 
 テストについての理解手法（人間視点）の調査論文。そこまで劇的な内容ではないが、イメージ通りの内容を補強してくれている感。
@@ -1017,7 +1143,7 @@ ___
 背景： ソースコードの読み取りには時間がかかる → **読み取りやすいコードを書くのがベネ → ネストとループについて2つのコードの可読性ルールを評価**  
 調査： 4つのカテゴリ（ルールに従うか否か、正しいか否か）、32のJavaメソッドをテスト → オンライン上で275名が実施 → ネストが最小限に抑えるとソースコードの読み取り理解の時間短縮、理解力の向上、do-whileは回避してもそこまで効果なし、英語知識が高いほどネストの最小化に影響
 
-Tag_Human, Tag_Code, Tag_Survey, Tag_Language  
+Tag_Human, Tag_Code, Tag_Research, Tag_Language  
 Tag_S_Comprehension, Tag_S_Human
 
 多くのプログラムが英語がベースになっているとはいえ、英語知識が記述に影響を与えるという結果は意外。 ネストが深いと読みづらいのは順当だが、ループ回避（どうやるのかは知らんが）してもそこまで影響しないのは意外
@@ -1028,7 +1154,7 @@ ___
 背景： **Dockerfileの管理が単一ではなく複数の Dockerfiles (family) になってきている** → 重複処理という（古典的な）課題が発生するのかは未調査  
 調査： 128のプロジェクトでの管理者を観察、25人に絞って調査 → 重複は頻繁に発生し、それに対してどうするかは意見が分かれる → 一部の管理者がその場のツールを使用 → 最大85%重複を削除する可能
 
-Tag_Human, Tag_Docker, Tag_Survey  
+Tag_Human, Tag_Docker, Tag_Research  
 Tag_S_Comprehension, Tag_S_Human
 
 解読に時間がかかったが、Dockerfile間の重複（冗長）があるのか、あった場合どうするのかについての調査。 Dockerもどこかで習いたいなぁ
@@ -1039,7 +1165,7 @@ ___
 背景： **GitHub Gist上にハードコードされたパスワードなど（Security Smells）を乗せてしまうことがある（危ない） → 脆弱性へ繋がる**  
 調査： 公開済みの Security Smells 関係の研究を用いて、Gist上のにおいを調査 → 静的分析を通じて13の Security Smells を発見、4403/5822 の公開済み Python Gists で発生が確認 → 1817/5822 で機密性の高いインスタンスを含むコードあり
 
-Tag_Github, Tag_Security, Tag_Survey, Tag_Code_Smell  
+Tag_Github, Tag_Security, Tag_Research, Tag_Code_Smell  
 Tag_S_Comprehension, Tag_S_Human
 
 セキュリティ上の情報を公開してしまう（コーディングや体制も含め）危険性の議論とその調査。 率が尋常じゃないが、母数の5822は絞っているはず。
@@ -1073,7 +1199,7 @@ ___
 背景： **マイクロサービス** はソフトウェアの進化について好影響（技術的負債の処理など）があるが、**どの行動がそれを促しているのかは不透明 → Evolvability を保証するプロセスなどを調査**  
 調査： 10社のソフトウェア専門家と14のマイクロサービスについて17回の半構造化された面接を実施 → Evolvability をどのように確保したかを議論 → 外部顧客向けシステムでは保証が中央ガバナンスに依存、アーキテクチャの原則が重要、自動化のツールとサポートが重要。 報告される問題のほとんどが Architectural Technical Debt (ATD) に関連 → それに対して指向したツールとメトリクスを使用していない
 
-Tag_Evolvability, Tag_Survey, Tag_Technical_Debt, Tag_Microservice  
+Tag_Evolvability, Tag_Research, Tag_Technical_Debt, Tag_Microservice  
 Tag_S_Architecture
 
 すでに参照数がそこそこ（6件）。 なんだが、いまだに Evolvability が何なのか説明できぬ。 結構な頻度で出てくるあたり、重要な概念なのか？
@@ -1084,7 +1210,7 @@ ___
 背景： **Architectural Smells はメンテコストを増大させる可能性（潜在的なリファクタリングに注意する必要性）** → 開発者たちは直観で知っているが、具体的に体系化されていない  
 調査： 時間経過と Architectural Smell のインスタンスの進化、インスタンスを定義する特性との相関を調査 → Smell は3タイプに分類、14のプロジェクトから524バージョンからマイニング → 各匂いの影響をめっちゃ受ける
 
-Tag_Code_Smell, Tag_Survey, Tag_Architecture, Tag_Version  
+Tag_Code_Smell, Tag_Research, Tag_Architecture, Tag_Version  
 Tag_S_Architecture
 
 またわからない概念が出てきたぞ…。 何やらヤバげなアーキテクチャ構成のことを言っているのか？
@@ -1095,7 +1221,7 @@ ___
 背景： フレームワークの機能については、シーケンシャルプログラムに比べてプログラミング、**デバッグの戦略をより調整しないといけない → が、フレームワークのデバッグの利点と課題は未整理**  
 調査： フレームワークAPIを用いたアプリの開発者について2つ(Android Fragment class, ROS Framework)の人間的調査を実施 → 一般的な問題への作成済みの解法が役立つ、フレームワークが何を抽象化しているのかを理解するのが難しい → フレームワークのデバッグ固有の問題がある
 
-Tag_API, Tag_Framework, Tag_Survey, Tag_Debug  
+Tag_API, Tag_Framework, Tag_Research, Tag_Debug  
 Tag_S_Architecture
 
 つまるところ、フレームワーク利用時のデバッグではフレームワークの公式Q&Aと、その用途の明確化が大事、ということ？
@@ -1106,7 +1232,7 @@ ___
 背景： **IaCは機械的に読み取り可能な定義ファイルを使ってインフラを管理する戦略** → エンジニアリング技術として関心が高い  
 調査： 多数の企業の上級開発者への44の半構造化面接を実施 → IaCの採用における実践の現状、SEの課題を整理 → IaCの採用・開発手法、現在利用可能なサポートツールの利点欠点、IaCを扱う開発者のニーズ
 
-Tag_IaC, Tag_Dev, Tag_Human, Tag_Survey  
+Tag_IaC, Tag_Dev, Tag_Human, Tag_Research  
 Tag_S_Architecture
 
 IaC三度。 この記述だとIaCはXMLとかの設定ファイルのことを指している…？ 前の論文で出てきたのはIaCスクリプトだかた少し毛色が違う感はあるが。
@@ -1115,4 +1241,7 @@ ___
 </details>
 </div>
 
-Tag_SurveyとTag_Practiceをしっかり分けたほうがいい感（現状だと何でもかんでもSurveyになってまう）
+Tag_SurveyとTag_Practiceをしっかり分けたほうがいい感（現状だと何でもかんでもSurveyになってまう）  
+- Survey: ほかの論文・技術の比較をまとめた論文
+- Research: 実験に相当する部分でアンケートやプロジェクトを調べている論文
+- Practice: 実践についての論文（上記二つとは重複する可能性あり）
